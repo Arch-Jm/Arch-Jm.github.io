@@ -249,3 +249,56 @@ document.addEventListener('touchend', function(e) {
     }
     lastTouchEnd = now;
 }, false);
+
+// إضافة القائمة الهامبرجر
+document.addEventListener('DOMContentLoaded', function() {
+    // ... الكود الحالي ...
+    
+    // قائمة الهامبرجر للهواتف
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+        
+        // إغلاق القائمة عند النقر على رابط
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(e) {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+    }
+    
+    // تأثير إخفاء الهيدر عند التمرير (للجوال فقط)
+    let lastScrollTop = 0;
+    const header = document.getElementById('main-header');
+    
+    window.addEventListener('scroll', function() {
+        if (window.innerWidth <= 768) { // للجوال فقط
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // التمرير لأسفل - إخفاء الهيدر
+                header.style.transform = 'translateY(-100%)';
+                header.style.transition = 'transform 0.3s ease';
+            } else {
+                // التمرير لأعلى - إظهار الهيدر
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        }
+    });
+});

@@ -780,3 +780,63 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
+/* أضف هذا في نهاية ملف style.css */
+@media (max-width: 768px) {
+    /* إصلاح القائمة */
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background: white;
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        display: none;
+        z-index: 999;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        background: #f5f5f7;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    
+    /* زر القائمة المتنقلة */
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: var(--primary-color);
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    /* إخفاء القائمة الأصلية */
+    nav {
+        order: 3;
+        width: 100%;
+    }
+}
+
+/* إخفاء زر الجوال في الديسكتوب */
+@media (min-width: 769px) {
+    .mobile-menu-btn {
+        display: none !important;
+    }
+}

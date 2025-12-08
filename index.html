@@ -188,5 +188,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+// إجبار المتصفح على عدم استخدام الكاش
+if (window.location.href.indexOf('github.io') !== -1) {
+    const version = 'v1.2'; // غير هذا الرقم عند كل تحديث
+    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        if (link.href.indexOf('style.css') !== -1) {
+            link.href = 'style.css?ver=' + version;
+        }
+    });
+    
+    const script = document.querySelector('script[src="script.js"]');
+    if (script) {
+        script.src = 'script.js?ver=' + version;
+    }
+}
+</script>
 </body>
 </html>

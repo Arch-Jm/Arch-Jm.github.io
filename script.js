@@ -254,3 +254,49 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// إصلاح القائمة المتنقلة
+document.addEventListener('DOMContentLoaded', function() {
+    // زر القائمة المتنقلة
+    const mobileMenuBtn = document.createElement('button');
+    mobileMenuBtn.className = 'mobile-menu-btn';
+    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+    
+    const navContainer = document.querySelector('.nav-container');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (navContainer && navMenu) {
+        // إضافة زر القائمة
+        navContainer.appendChild(mobileMenuBtn);
+        
+        // حدث فتح/إغلاق القائمة
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // إغلاق القائمة عند النقر على رابط
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // إغلاق القائمة عند التمرير
+        window.addEventListener('scroll', function() {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+    }
+    
+    // إصلاح أزرار اللمس في الجوال
+    document.querySelectorAll('a, button').forEach(element => {
+        element.style.touchAction = 'manipulation';
+        element.style.WebkitTapHighlightColor = 'transparent';
+    });
+});

@@ -226,3 +226,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // تشغيل تأثير التمرير عند التحميل
     window.dispatchEvent(new Event('scroll'));
 });
+
+// زيادة حجم العناصر القابلة للنقر على الهواتف
+if ('ontouchstart' in window) {
+    document.querySelectorAll('button, a, input, textarea').forEach(el => {
+        el.style.minHeight = '44px';
+    });
+}
+
+// منع التكبير على الهواتف
+document.addEventListener('touchstart', function(e) {
+    if (e.touches.length > 1) {
+        e.preventDefault();
+    }
+}, { passive: false });
+
+let lastTouchEnd = 0;
+document.addEventListener('touchend', function(e) {
+    const now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+        e.preventDefault();
+    }
+    lastTouchEnd = now;
+}, false);

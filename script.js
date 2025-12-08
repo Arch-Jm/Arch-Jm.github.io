@@ -226,3 +226,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // تشغيل تأثير التمرير عند التحميل
     window.dispatchEvent(new Event('scroll'));
 });
+// إصلاح مشاكل اللمس في الجوال
+document.addEventListener('DOMContentLoaded', function() {
+    // منع zoom مزدوج اللمس
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    }, { passive: false });
+
+    // تحسين تجربة اللمس للروابط
+    document.querySelectorAll('a, button').forEach(element => {
+        element.style.cursor = 'pointer';
+        element.addEventListener('touchstart', function() {
+            this.style.opacity = '0.7';
+        });
+        element.addEventListener('touchend', function() {
+            this.style.opacity = '1';
+        });
+    });
+
+    // تحسين عرض النموذج في الجوال
+    const inputs = document.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            window.scrollTo(0, this.offsetTop - 100);
+        });
+    });
+});

@@ -43,7 +43,7 @@ const translations = {
         footerDescription: "עיצוב מודרני, רספונסיבי וחווית משתמש מעולה - אתר אישי ייחודי במיוחד עבורך.",
         cardName: "ג'וני מחול",
         cardTitle: "אדריכל ומעצב פנים",
-        cardLocation: "ירושלים",
+        cardLocation: "ישראיל",
         cardPhone: "+972 52 314 5028",
         name: "שם מלא",
         email: "כתובת אימייל",

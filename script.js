@@ -1,33 +1,6 @@
-// script.js
+// JavaScript مبسط
+
 const translations = {
-    ar: {
-        home: "الرئيسية",
-        social: "وسائل التواصل",
-        businessCard: "بطاقة العمل",
-        contact: "اتصل بي",
-        heroTitle: "مرحبًا، أنا جوني مخول",
-        heroText: "أهلاً بكم في موقعي الشخصي. تصميم فريد، مريح للعين وتجربة استخدام رائعة تنتظركم هنا.",
-        socialMedia: "وسائل التواصل الاجتماعي",
-        socialText: "تواصل معي عبر منصات التواصل الاجتماعي المختلفة",
-        contactMe: "تواصل معي",
-        contactText: "املأ النموذج وسأعود إليك في أقرب وقت ممكن",
-        footerText: "© 2023 جوني مخول. جميع الحقوق محفوظة.",
-        footerDescription: "تصميم عصري، متجاوب وتجربة استخدام رائعة - موقع شخصي فريد من نوعه من أجلك.",
-        cardName: "جوني مخول",
-        cardTitle: "مهندس معماري ومصمم داخلي",
-        cardLocation: "اسرائيل",
-        cardPhone: "+972 52 314 5028",
-        name: "الاسم الكامل",
-        email: "البريد الإلكتروني",
-        subject: "موضوع الرسالة",
-        message: "الرسالة",
-        sendMessage: "إرسال الرسالة",
-        facebook: "فيسبوك",
-        instagram: "إنستغرام",
-        whatsapp: "واتساب",
-        visitPage: "زيارة الصفحة",
-        contact: "التواصل"
-    },
     he: {
         home: "דף הבית",
         social: "מדיה חברתית",
@@ -37,266 +10,209 @@ const translations = {
         heroText: "ברוכים הבאים לאתר האישי שלי. עיצוב ייחודי, נוח לעין וחווית משתמש מעולה המחכה לכם כאן.",
         socialMedia: "מדיה חברתית",
         socialText: "צור איתי קשר דרך פלטפורמות המדיה החברתית השונות",
-        contactMe: "צור קשר",
-        contactText: "מלאו את הטופס ואחזור אליכם בהקדם האפשרי",
-        footerText: "© 2023 ג'וני מחול. כל הזכויות שמורות.",
-        footerDescription: "עיצוב מודרני, רספונסיבי וחווית משתמש מעולה - אתר אישי ייחודי במיוחד עבורך.",
-        cardName: "ג'וני מחול",
-        cardTitle: "אדריכל ומעצב פנים",
-        cardLocation: "ירושלים",
-        cardPhone: "+972 52 314 5028",
-        name: "שם מלא",
-        email: "כתובת אימייל",
-        subject: "נושא הפנייה",
-        message: "הודעה",
-        sendMessage: "שלח הודעה",
         facebook: "פייסבוק",
         instagram: "אינסטגרם",
         whatsapp: "וואטסאפ",
         visitPage: "בקר בדף",
-        contact: "צור קשר"
+        contact: "צור קשר",
+        cardName: "ג'וני מחול",
+        cardTitle: "אדריכל ומעצב פנים",
+        cardLocation: "ירושלים, ישראל",
+        cardPhone: "+972 52 314 5028",
+        contactMe: "צור קשר",
+        contactText: "מלאו את הטופס ואחזור אליכם בהקדם האפשרי",
+        name: "שם מלא",
+        email: "אימייל",
+        subject: "נושא",
+        message: "הודעה",
+        sendMessage: "שלח הודעה",
+        footerText: "© 2023 ג'וני מחול. כל הזכויות שמורות.",
+        footerDescription: "עיצוב מודרני, רספונסיבי וחווית משתמש מעולה"
     },
     en: {
         home: "Home",
         social: "Social Media",
         businessCard: "Business Card",
-        contact: "Contact Me",
+        contact: "Contact",
         heroTitle: "Hello, I'm Jonny Makhoul",
         heroText: "Welcome to my personal website. Unique design, eye-friendly and excellent user experience awaits you here.",
         socialMedia: "Social Media",
         socialText: "Connect with me through different social media platforms",
-        contactMe: "Contact Me",
-        contactText: "Fill out the form and I'll get back to you as soon as possible",
-        footerText: "© 2023 Jonny Makhoul. All rights reserved.",
-        footerDescription: "Modern design, responsive and excellent user experience - a unique personal website just for you.",
-        cardName: "Jonny Makhoul",
-        cardTitle: "Architect and interior designer",
-        cardLocation: "Israel",
-        cardPhone: "+972 52 314 5028",
-        name: "Full Name",
-        email: "Email Address",
-        subject: "Subject",
-        message: "Message",
-        sendMessage: "Send Message",
         facebook: "Facebook",
         instagram: "Instagram",
         whatsapp: "WhatsApp",
         visitPage: "Visit Page",
-        contact: "Contact"
+        contact: "Contact",
+        cardName: "Jonny Makhoul",
+        cardTitle: "Architect and Interior Designer",
+        cardLocation: "Jerusalem, Israel",
+        cardPhone: "+972 52 314 5028",
+        contactMe: "Contact Me",
+        contactText: "Fill out the form and I'll get back to you as soon as possible",
+        name: "Full Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        sendMessage: "Send Message",
+        footerText: "© 2023 Jonny Makhoul. All rights reserved.",
+        footerDescription: "Modern design, responsive and excellent user experience"
+    },
+    ar: {
+        home: "الرئيسية",
+        social: "وسائل التواصل",
+        businessCard: "بطاقة العمل",
+        contact: "اتصل بي",
+        heroTitle: "مرحبًا، أنا جوني مخول",
+        heroText: "أهلاً بكم في موقعي الشخصي. تصميم فريد، مريح للعين وتجربة استخدام رائعة تنتظركم هنا.",
+        socialMedia: "وسائل التواصل الاجتماعي",
+        socialText: "تواصل معي عبر منصات التواصل الاجتماعي المختلفة",
+        facebook: "فيسبوك",
+        instagram: "إنستغرام",
+        whatsapp: "واتساب",
+        visitPage: "زيارة الصفحة",
+        contact: "التواصل",
+        cardName: "جوني مخول",
+        cardTitle: "مهندس معماري ومصمم داخلي",
+        cardLocation: "القدس، فلسطين",
+        cardPhone: "+972 52 314 5028",
+        contactMe: "تواصل معي",
+        contactText: "املأ النموذج وسأعود إليك في أقرب وقت ممكن",
+        name: "الاسم الكامل",
+        email: "البريد الإلكتروني",
+        subject: "الموضوع",
+        message: "الرسالة",
+        sendMessage: "إرسال الرسالة",
+        footerText: "© 2023 جوني مخول. جميع الحقوق محفوظة.",
+        footerDescription: "تصميم عصري، متجاوب وتجربة استخدام رائعة"
     }
 };
 
+// التهيئة
 document.addEventListener('DOMContentLoaded', function() {
+    // القائمة المتنقلة
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(event) {
+            if (!mainNav.contains(event.target) && !menuToggle.contains(event.target)) {
+                mainNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    }
+    
+    // تبديل اللغة
     const langButtons = document.querySelectorAll('.lang-btn');
-    const body = document.body;
-    const header = document.getElementById('main-header');
     
-    // تعيين العبرية كلغة افتراضية
-    setActiveLanguage('he');
-    
-    // حدث تغيير اللغة
     langButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const selectedLang = this.getAttribute('data-lang');
-            setActiveLanguage(selectedLang);
+            const lang = this.getAttribute('data-lang');
+            
+            // تحديث الأزرار النشطة
+            langButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // تطبيق اللغة
+            changeLanguage(lang);
         });
     });
     
-    // دالة لتعيين اللغة النشطة
-    function setActiveLanguage(lang) {
-        // تحديث حالة الأزرار النشطة
-        langButtons.forEach(btn => {
-            btn.classList.remove('active');
-            if (btn.getAttribute('data-lang') === lang) {
-                btn.classList.add('active');
-            }
-        });
-        
-        // تغيير اتجاه النص واتجاه الصفحة
-        body.setAttribute('lang', lang);
-        body.setAttribute('dir', lang === 'en' ? 'ltr' : 'rtl');
-        
-        // تطبيق الترجمات
-        applyTranslations(lang);
-    }
-    
-    // تطبيق الترجمات
-    function applyTranslations(lang) {
-        // ترجمة العناصر مع data-lang-key
-        document.querySelectorAll('[data-lang-key]').forEach(element => {
-            const key = element.getAttribute('data-lang-key');
-            if (translations[lang][key]) {
-                element.textContent = translations[lang][key];
-            }
-        });
-        
-        // ترجمة العناصر الخاصة
-        const elements = {
-            'hero-title': 'heroTitle',
-            'hero-text': 'heroText',
-            'social-text': 'socialText',
-            'card-name': 'cardName',
-            'card-title': 'cardTitle',
-            'card-phone': 'cardPhone',
-            'contact-text': 'contactText',
-            'footer-text': 'footerText',
-            'footer-description': 'footerDescription'
-        };
-        
-        for (const [id, key] of Object.entries(elements)) {
-            const element = document.getElementById(id);
-            if (element && translations[lang][key]) {
-                element.textContent = translations[lang][key];
-            }
-        }
-        
-        // تحديث موقع بطاقة العمل
-        const locationElement = document.getElementById('card-location');
-        if (locationElement && translations[lang].cardLocation) {
-            locationElement.innerHTML = `<i class="fas fa-map-marker-alt" style="margin-left: 5px;"></i> ${translations[lang].cardLocation}`;
-        }
-    }
-    
-    // تأثيرات عند التمرير
-    window.addEventListener('scroll', function() {
-        header.classList.toggle('header-scrolled', window.scrollY > 50);
-        
-        // تأثيرات ظهور العناصر
-        const scrollElements = document.querySelectorAll('.social-card, .contact-item, .business-card');
-        scrollElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top <= window.innerHeight / 1.25) {
-                el.classList.add('scrolled');
-            }
-        });
-    });
-    
-    // تمرير سلس للروابط
+    // تمرير سلس
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href === '#') return;
+            e.preventDefault();
             
-            const target = document.querySelector(href);
-            if (target) {
-                e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // إغلاق القائمة في الجوال
+                if (mainNav) mainNav.classList.remove('active');
+                if (menuToggle) menuToggle.classList.remove('active');
+                
                 window.scrollTo({
-                    top: target.offsetTop - 100,
+                    top: targetElement.offsetTop - 80,
                     behavior: 'smooth'
                 });
             }
         });
     });
     
-    // معالجة نموذج الاتصال
-    const contactForm = document.getElementById('contactForm');
+    // النموذج
+    const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
             const submitBtn = this.querySelector('.submit-btn');
-            const originalHTML = submitBtn.innerHTML;
-            const currentLang = body.getAttribute('lang');
+            const originalText = submitBtn.innerHTML;
+            const currentLang = document.body.getAttribute('lang') || 'he';
             
-            // رسائل النجاح حسب اللغة
-            const successMessages = {
-                ar: 'شكراً! تم إرسال رسالتك بنجاح.',
-                he: 'תודה! הודעתך נשלחה בהצלחה.',
-                en: 'Thank you! Your message has been sent successfully.'
+            // رسالة النجاح
+            const messages = {
+                he: 'תודה! ההודעה נשלחה בהצלחה.',
+                en: 'Thank you! Your message has been sent successfully.',
+                ar: 'شكراً! تم إرسال رسالتك بنجاح.'
             };
             
-            // عرض مؤقت للناجح
-            submitBtn.innerHTML = '<i class="fas fa-check"></i> ' + 
-                (currentLang === 'he' ? 'נשלח!' : 
-                 currentLang === 'ar' ? 'تم الإرسال!' : 'Sent!');
+            // عرض تأثير النجاح
+            submitBtn.innerHTML = '<i class="fas fa-check"></i> נשלח!';
+            submitBtn.style.background = '#4CAF50';
             
             setTimeout(() => {
-                submitBtn.innerHTML = originalHTML;
-                alert(successMessages[currentLang] || successMessages.en);
+                alert(messages[currentLang]);
+                submitBtn.innerHTML = originalText;
+                submitBtn.style.background = '';
                 this.reset();
             }, 1500);
             
-            // إرسال الفورم فعلياً
+            // إرسال الفورم الحقيقي
             setTimeout(() => {
                 this.submit();
             }, 2000);
         });
     }
     
-    // تشغيل تأثير التمرير عند التحميل
-    window.dispatchEvent(new Event('scroll'));
+    // تعيين اللغة الافتراضية
+    changeLanguage('he');
 });
-// إصلاح مشاكل اللمس في الجوال
-document.addEventListener('DOMContentLoaded', function() {
-    // منع zoom مزدوج اللمس
-    document.addEventListener('touchstart', function(event) {
-        if (event.touches.length > 1) {
-            event.preventDefault();
+
+// دالة تغيير اللغة
+function changeLanguage(lang) {
+    // تحديث body
+    document.body.setAttribute('lang', lang);
+    document.body.style.direction = lang === 'en' ? 'ltr' : 'rtl';
+    
+    // تحديث النصوص
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
         }
-    }, { passive: false });
-
-    // تحسين تجربة اللمس للروابط
-    document.querySelectorAll('a, button').forEach(element => {
-        element.style.cursor = 'pointer';
-        element.addEventListener('touchstart', function() {
-            this.style.opacity = '0.7';
-        });
-        element.addEventListener('touchend', function() {
-            this.style.opacity = '1';
-        });
     });
-
-    // تحسين عرض النموذج في الجوال
-    const inputs = document.querySelectorAll('input, textarea, select');
-    inputs.forEach(input => {
-        input.addEventListener('focus', function() {
-            window.scrollTo(0, this.offsetTop - 100);
-        });
-    });
-});
-
-// إصلاح القائمة المتنقلة
-document.addEventListener('DOMContentLoaded', function() {
-    // زر القائمة المتنقلة
-    const mobileMenuBtn = document.createElement('button');
-    mobileMenuBtn.className = 'mobile-menu-btn';
-    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
     
-    const navContainer = document.querySelector('.nav-container');
-    const navMenu = document.querySelector('.nav-menu');
+    // تحديث الـ placeholder
+    const inputs = {
+        'name': 'name',
+        'email': 'email',
+        'subject': 'subject',
+        'message': 'message'
+    };
     
-    if (navContainer && navMenu) {
-        // إضافة زر القائمة
-        navContainer.appendChild(mobileMenuBtn);
-        
-        // حدث فتح/إغلاق القائمة
-        mobileMenuBtn.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') 
-                ? '<i class="fas fa-times"></i>' 
-                : '<i class="fas fa-bars"></i>';
-        });
-        
-        // إغلاق القائمة عند النقر على رابط
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-        });
-        
-        // إغلاق القائمة عند التمرير
-        window.addEventListener('scroll', function() {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-            }
-        });
+    for (const [id, key] of Object.entries(inputs)) {
+        const input = document.getElementById(id);
+        if (input && translations[lang][key]) {
+            input.placeholder = translations[lang][key];
+        }
     }
     
-    // إصلاح أزرار اللمس في الجوال
-    document.querySelectorAll('a, button').forEach(element => {
-        element.style.touchAction = 'manipulation';
-        element.style.WebkitTapHighlightColor = 'transparent';
-    });
-});
+    // حفظ اللغة
+    localStorage.setItem('preferred-language', lang);
+}

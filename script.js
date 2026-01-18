@@ -24,6 +24,7 @@ const translations = {
         // قسم المعرض 
         portfolioTitle: "תיק עבודות",
         portfolioSubtitle: "פרויקט גמר",
+		portfolioSubtitle1: "מטבח מודרני",
 		
 		// قسم الفيديو
 		video: "סרטונים",
@@ -34,7 +35,7 @@ const translations = {
 		video3Title: "תהליך עיצוב פנים",
                
         // قسم الخدمات
-        servicesTitle: "השירותים שלנו",
+        servicesTitle: "השירותים",
         service1: "תכנון אדריכלי",
         service1Text: "תכנון מלא של מבנים בהתאם לדרישות הלקוח ותקני הבנייה העדכניים.",
         service2: "בנייה ותכנון עירוני",
@@ -82,6 +83,7 @@ const translations = {
         
         portfolioTitle: "Portfolio",
         portfolioSubtitle: "Final project",
+		portfolioSubtitle1: "Modern Kitchin",
 		
 		video: "Videos",
 		videoTitle: "CAD Automation: Lisp & Smart Blocks",
@@ -90,7 +92,7 @@ const translations = {
 		video2Title: "Lisp Programming: Optimizing Workflow Efficiency",
 		video3Title: "Interior Design Process",
                
-        servicesTitle: "Our Services",
+        servicesTitle: "Services",
         service1: "Architectural Planning",
         service1Text: "Complete planning of buildings according to client requirements and current building standards.",
         service2: "Urban Planning",
@@ -135,6 +137,7 @@ const translations = {
         
         portfolioTitle: "معرض الأعمال",
         portfolioSubtitle: "المشروع النهائي",
+		portfolioSubtitle1: "مطبخ عصري",
 		
 		video: "فيديوهات",
 		videoTitle: "أتمتة الرسم الهندسي: Lisp و Blocks ذكية",
@@ -143,7 +146,7 @@ const translations = {
 		video2Title: "برمجيات Lisp: تحسين كفاءة وسير العمل",
 		video3Title: "عملية التصميم الداخلي",
               
-        servicesTitle: "خدماتنا",
+        servicesTitle: "الخدمة",
         service1: "التخطيط المعماري",
         service1Text: "التخطيط الكامل للمباني وفقًا لمتطلبات العملاء ومعايير البناء الحالية.",
         service2: "التخطيط الحضري",
@@ -172,12 +175,15 @@ const translations = {
 
 // بيانات الصور للمعرض
 const galleryImages = [
-    { id: 1, src: "Library-img-1.jpg", category: "", title: { he: "כניסה לספרייה", en: "Library entrance", ar: "واجهة المكتبة" } },
-    { id: 2, src: "Library-img-2.jpg", category: "", title: { he: "חזית דרומית", en: "South facade", ar: "الواجهة الجنوبية" } },
-    { id: 3, src: "Library-img-3.jpg", category: "", title: { he: "עיצוב פנים מודרני", en: "Modern Interior Design", ar: "تصميم داخلي حديث" } },
-    { id: 4, src: "Library-Plan-1.jpg", category: "", title: { he: "תוכנית קרקע", en: "Plan", ar: "تخطيط الطابق الارضي" } },
-    { id: 5, src: "Library-Section-1.jpg", category: "", title: { he: "חתכים", en: "Sections", ar: "مقاطع" } },
-    { id: 6, src: "Library-Details-1.jpg", category: "", title: { he: "פרטים", en: "Details", ar: "تفاصيل" } },
+    { id: 1, src: "Library-img-1.jpg", category: "library",  title: { he: "כניסה לספרייה", en: "Library entrance", ar: "واجهة المكتبة" } },
+    { id: 2, src: "Library-img-2.jpg", category: "library", title: { he: "חזית דרומית", en: "South facade", ar: "الواجهة الجنوبية" } },
+    { id: 3, src: "Library-img-3.jpg", category: "library", title: { he: "עיצוב פנים מודרני", en: "Modern Interior Design", ar: "تصميم داخلي حديث" } },
+    { id: 4, src: "Library-Plan-1.jpg", category: "library", title: { he: "תוכנית קרקע", en: "Plan", ar: "تخطيط الطابق الارضي" } },
+    { id: 5, src: "Library-Section-1.jpg", category: "library", title: { he: "חתכים", en: "Sections", ar: "مقاطع" } },
+    { id: 6, src: "Library-Details-1.jpg", category: "library", title: { he: "פרטים", en: "Details", ar: "تفاصيل" } },
+	{ id: 7, src: "Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
+	{ id: 8, src: "Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
+	{ id: 9, src: "Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
   ];
 
 // المتغيرات العامة
@@ -193,7 +199,32 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
     
     // تهيئة معرض الصور
-    initGallery();
+     function initGalleryBySection(sectionId, categoryName) {
+    const container = document.getElementById(sectionId);
+    if (!container) return;
+
+    const filteredImages = galleryImages.filter(img => img.category === categoryName);
+
+    filteredImages.forEach((image, index) => {
+        const galleryItem = document.createElement('div');
+        galleryItem.className = `gallery-item ${image.category}`;
+        // ملاحظة: الـ index هون لازم يكون مطابق للمصفوفة الأصلية عشان الـ Lightbox يشتغل صح
+        const originalIndex = galleryImages.findIndex(img => img.id === image.id);
+        
+        galleryItem.innerHTML = `
+            <img src="${image.src}" alt="${image.title.he}" loading="lazy">
+            <div class="gallery-item-overlay">
+                <h4>${image.title[currentLang]}</h4>
+            </div>
+        `;
+        galleryItem.addEventListener('click', () => openLightbox(originalIndex));
+        container.appendChild(galleryItem);
+    });
+}
+
+	// عند التحميل، استدعي الدالة مرتين
+initGalleryBySection('gallery-library', 'library');
+initGalleryBySection('gallery-Kitchin', 'Kitchin');
     
     // تهيئة نموذج الاتصال
     initContactForm();

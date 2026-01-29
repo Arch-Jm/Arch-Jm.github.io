@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnny Makhoul | Architecture & Interior Design</title>
+	<!-- بعد <title> -->
+<meta name="description" content="مهندس معماري متخصص في AutoCAD، أقدم بلوكات ديناميكية وبرمجة LISP مخصصة لتوفير وقت العمل">
+<meta name="keywords" content="AutoCAD, بلوكات ديناميكية, LISP, مهندس معماري, architectural, dwg">
+<meta name="author" content="اسمك">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph لوسائل التواصل -->
+<meta property="og:title" content="مكتب الهندسة المعمارية | AutoCAD Specialist">
+<meta property="og:description" content="حلول احترافية لبرنامج AutoCAD">
+<meta property="og:image" content="https://arch-jm.github.io/images/og-image.jpg">
+<meta property="og:url" content="https://arch-jm.github.io">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">ג'וני מחול</span>
+                <span class="logo-line"></span>
+            </a>
+            
+<div class="nav-links">
+    <a href="#home" class="nav-link active" data-i18n="home">דף הבית</a>
+    <a href="#about" class="nav-link" data-i18n="about">אודות</a>
+    <a href="#portfolio" class="nav-link" data-i18n="portfolio">תיק עבודות</a>
+    <a href="#services" class="nav-link" data-i18n="services">שירותים</a>
+    <a href="#video" class="nav-link" data-i18n="video">סרטונים</a>
+	<a href="#contact" class="nav-link" data-i18n="contact">צור קשר</a>   
+    <a href="#video" class="nav-link nav-download-btn" data-i18n="downloadTool">הורד כלי</a>
+</div>
+            
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="he">עברית</button>
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+            
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="heroTitle">ג'וני מחול | אדרכל</h1>
+            <p class="hero-subtitle" data-i18n="heroSubtitle">הנדסאי אדריכלות ותוכנה, שואף תמיד להשיג את התוצאות הטובות ביותר במינימום זמן</p>
+            <a href="#contact" class="cta-button" data-i18n="getQuote">ליצירת קשר</a>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- قسم حول المهندس -->
+   <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="aboutTitle">אודות</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="aboutText1">מומחה בשרטוט מדויק ובבניית בלוקים חכמים לייעול העבודה, בעל יכולת יצירתית לפתרון חללים אדריכליים.</p>
+                    <p data-i18n="aboutText2">רכשתי את ניסיוני באמצעות למידה עצמית במהלך לימודיי האקדמיים, ואני פועל לשיפור מתמיד בכל הזדמנות.</p>
+                    <div class="about-stats">
+                      <!--   <div class="stat">
+                            <span class="stat-number">0+</span>
+                            <span class="stat-text" data-i18n="yearsExp">שנות ניסיון</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-text" data-i18n="projectsDone">פרויקטים שהושלמו</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">0+</span>
+                            <span class="stat-text" data-i18n="awards">פרסים מקצועיים</span>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="Profile.jpg" alt="Architect">
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- قسم معرض الصور -->
+  <section id="portfolio" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="portfolioTitle">תיק עבודות</h2>
+            <h2 class="section-subtitle" data-i18n="portfolioSubtitle">פרויקט גמר</h2>
+            
+           
+            
+            <!-- معرض الصور -->
+            <div class="gallery-container">
+                <div class="gallery" id="gallery-library"></div>
+				
+				<h3 class="section-subtitle" data-i18n="portfolioSubtitle1">מטבח מודרני</h3>
+				<div class="gallery" id="gallery-Kitchin"></div>
+                 
+            
+        </div>
+    </section>
+	
+	<!-- قسم الفيديو -->
+<section id="video" class="section">
+    <div class="container">
+        <h2 class="section-title" data-i18n="videoTitle">אוטומציה בשרטוט: ליספים ובלוקים חכמים</h2>
+        
+        <div class="video-gallery">
+            <!-- فيديو 1 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+                 <!--    <video class="project-video" controls preload="metadata" controls poster="Vid-Img-1.jpg">
+                        <source src="2.mp4" type="video/mp4">
+                        <source src="2.mp4" type="webm"> 
+                        <p data-i18n="videoNotSupported">הדפדפן שלך אינו תומך בהפעלת סרטונים.</p>
+                    </video> -->
+
+					<iframe 
+ 					   src="https://www.youtube.com/embed/al4hQ7G8cVI?vq=hd1080&rel=0&modestbranding=1" 
+ 					   title="Dynamic AutoCAD Blocks" 
+  					   frameborder="0" 
+ 					   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
+					</iframe>
+					
+                    <div class="video-overlay">
+                      <!--  <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button> -->
+                        <h3 class="video-title" data-i18n="video1Title">הכוח של בלוקים דינמיים: חיסכון בזמן</h3>
+                    </div> 
+                </div>
+            </div>
+            
+             <!-- فيديو 2 -->
+            <div class="video-item">
+                <div class="video-wrapper">
+					
+                   	<iframe 
+ 					   src="https://www.youtube.com/embed/zK96JO1_ET0?vq=hd1080&rel=0&modestbranding=1" 
+ 					   title="Dynamic AutoCAD Blocks" 
+  					   frameborder="0" 
+ 					   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+						allowfullscreen>
+					</iframe>
+					
+                    <div class="video-overlay">
+                       
+                        <h3 class="video-title" data-i18n="video2Title">תכנות ליספים: ייעול ושיפור תהליכי עבודה</h3>
+                    </div>
+                </div>
+            </div> 
+            
+          <!--   <!-- فيديو 3 
+            <div class="video-item">
+                <div class="video-wrapper">
+                    <video class="project-video" controls poster="images/video3-poster.jpg">
+                        <source src="videos/project3.mp4" type="video/mp4">
+                        <source src="videos/project3.webm" type="video/webm">
+                        <p data-i18n="videoNotSupported">הדפדפן שלך אינו תומך בהפעלת סרטונים.</p>
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <h3 class="video-title" data-i18n="video3Title">תהליך עיצוב פנים</h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<section id="premium" class="section bg-light">
+    <div class="container text-center">
+        <h2 class="section-title" data-i18n="premiumTitle">JohnnyTools Premium</h2>
+        <p class="section-subtitle" data-i18n="premiumDesc">
+    </p>
+        
+       <div class="plugin-preview">
+    <img src="JTool.png" alt="JohnnyTools Toolbar" class="plugin-img">
+    
+    <div class="plugin-action-container">
+<a href="JTool.exe" 
+   class="nav-link nav-download-btn" 
+   download data-i18n="buyNow">
+   <i class="fas fa-download"></i> 
+   <span data-i18n="downloadTool">רכישת רישיון / הורדה</span>
+</a>
+    </div>
+</div>
+</section>
+
+
+    <!-- قسم الخدمات -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="servicesTitle">השירותים שלנו</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service1">תכנון אדריכלי</h3>
+                    <p class="service-text" data-i18n="service1Text">תכנון מלא של מבנים בהתאם לדרישות הלקוח ותקני הבנייה העדכניים.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service2">בנייה ותכנון עירוני</h3>
+                    <p class="service-text" data-i18n="service2Text">פיתוח פרויקטים עירוניים מורכבים תוך התחשבות בסביבה ובקהילה.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service3">עיצוב פנים</h3>
+                    <p class="service-text" data-i18n="service3Text">יצירת חללים פנימיים פונקציונליים ואסתטיים המותאמים אישית.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="service-title" data-i18n="service4">בנייה בת-קיימא</h3>
+                    <p class="service-text" data-i18n="service4Text">תכנון מבנים חכמים וחסכוניים באנרגיה התורמים לאיכות הסביבה.</p>
+                </div>
+				
+				
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج الاتصال -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contactTitle">צור קשר</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-i18n="contactInfo">פרטי התקשרות</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-i18n="address">רחוב: פקעין (בוקייעה) , צפון ישלאיל</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+972-052-314-5028</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>jmakhoul.1994@gmail.com</span>
+                    </div>
+                    <div class="social-links">
+    <a href="https://wa.me/9720523145028?text=Hello%20Johnny,%20I%20am%20interested%20in%20JohnnyTools%20Premium%20License" 
+       class="social-icon whatsapp-btn" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-text">WhatsApp</span>
+    </a>
+</div>
+                </div>
+                <div class="contact-form">
+                   <form  action="https://formspree.io/f/mzznadnd" method="POST" id="contactForm">
+				       <input type="hidden" name="_subject" value="Contact Form">
+						<input type="text" name="_gotcha" style="display:none">
+				   
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="שם מלא" required data-i18n-placeholder="fullName">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="אימייל" required data-i18n-placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="טלפון" data-i18n-placeholder="phone">
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="" disabled selected data-i18n="selectService">בחר סוג שירות</option>
+                                <option value="architectural" data-i18n="serviceOption1">תכנון אדריכלי</option>
+                                <option value="urban" data-i18n="serviceOption2">תכנון עירוני</option>
+                                <option value="interior" data-i18n="serviceOption3">עיצוב פנים</option>
+                                <option value="sustainable" data-i18n="serviceOption4">בנייה בת-קיימא</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="הודעה" required data-i18n-placeholder="message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-i18n="sendMessage">שלח הודעה</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">עיצוב אדריכלי</span>
+                    <span class="logo-line"></span>
+                </div>
+                <p class="footer-text" data-i18n="footerText">אשמח לשיתוף פעולה פורה ומקצועי איתכם</p>
+                <p class="copyright">&copy; <span id="currentYear"></span> כל הזכויות שמורות</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة معرض الصور الموسع -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button id="closeLightbox" class="lightbox-close">&times;</button>
+            <button id="prevBtn" class="lightbox-nav"><i class="fas fa-chevron-right"></i></button>
+            <button id="nextBtn" class="lightbox-nav"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <div id="imageInfo" class="image-info"></div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

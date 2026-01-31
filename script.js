@@ -207,15 +207,15 @@ automationService: "AutoCAD Automation Development",
 
 // بيانات الصور للمعرض
 const galleryImages = [
-    { id: 1, src: "Library-img-1.jpg", category: "library",  title: { he: "כניסה לספרייה", en: "Library entrance", ar: "واجهة المكتبة" } },
-    { id: 2, src: "Library-img-2.jpg", category: "library", title: { he: "חזית דרומית", en: "South facade", ar: "الواجهة الجنوبية" } },
-    { id: 3, src: "Library-img-3.jpg", category: "library", title: { he: "עיצוב פנים מודרני", en: "Modern Interior Design", ar: "تصميم داخلي حديث" } },
-    { id: 4, src: "Library-Plan-1.jpg", category: "library", title: { he: "תוכנית קרקע", en: "Plan", ar: "تخطيط الطابق الارضي" } },
-    { id: 5, src: "Library-Section-1.jpg", category: "library", title: { he: "חתכים", en: "Sections", ar: "مقاطع" } },
-    { id: 6, src: "Library-Details-1.jpg", category: "library", title: { he: "פרטים", en: "Details", ar: "تفاصيل" } },
-	{ id: 7, src: "Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 8, src: "Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 9, src: "Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
+    { id: 1, src: "assets/Project/FinalProject/Library-img-1.webp", category: "library",  title: { he: "כניסה לספרייה", en: "Library entrance", ar: "واجهة المكتبة" } },
+    { id: 2, src: "assets/Project/FinalProject/Library-img-2.webp", category: "library", title: { he: "חזית דרומית", en: "South facade", ar: "الواجهة الجنوبية" } },
+    { id: 3, src: "assets/Project/FinalProject/Library-img-3.webp", category: "library", title: { he: "עיצוב פנים מודרני", en: "Modern Interior Design", ar: "تصميم داخلي حديث" } },
+    { id: 4, src: "assets/Project/FinalProject/Library-Plan-1.webp", category: "library", title: { he: "תוכנית קרקע", en: "Plan", ar: "تخطيط الطابق الارضي" } },
+    { id: 5, src: "assets/Project/FinalProject/Library-Section-1.webp", category: "library", title: { he: "חתכים", en: "Sections", ar: "مقاطع" } },
+    { id: 6, src: "assets/Project/FinalProject/Library-Details-1.webp", category: "library", title: { he: "פרטים", en: "Details", ar: "تفاصيل" } },
+	{ id: 7, src: "assets/Project/kitchen01/Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
+	{ id: 8, src: "assets/Project/kitchen01/Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
+	{ id: 9, src: "assets/Project/kitchen01/Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
   ];
 
 // المتغيرات العامة

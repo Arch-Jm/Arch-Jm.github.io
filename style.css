@@ -173,7 +173,7 @@ body {
 /* قسم البطل */
 .hero-section {
     height: 100vh;
-    background-image: url('Library-img-2.jpg');
+    background-image: url('assets/Project/FinalProjec/Library-img-2.webp');
     background-size: cover;
     background-position: center;
     display: flex;

@@ -56,7 +56,7 @@ const translations = {
         serviceOption1: "תכנון אדריכלי",
         serviceOption2: "תכנון עירוני",
         serviceOption3: "עיצוב פנים",
-        serviceOption4: "בנייה בת-קיימא",
+        serviceOption4: "פיתוח תוספים",
         message: "הודעה",
         sendMessage: "שלח הודעה",
         

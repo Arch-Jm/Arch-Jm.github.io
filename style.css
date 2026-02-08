@@ -7,8 +7,15 @@
     --gold: #d4af37;
     --light-gold: #f4e4a6;
     --dark-gold: #a67c00;
-    --gray: #777777;
+    --gray: #5a5a5a;
     --light-gray: #eaeaea;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height); /* بيحجز مكان الصورة قبل ما تتحمل */
+    content-visibility: auto; /* بيحسن سرعة الرندر */
 }
 
 * {
@@ -22,6 +29,7 @@ html {
 }
 
 body {
+    
     font-family: 'Cairo', sans-serif;
     color: var(--primary-black);
     line-height: 1.6;
@@ -124,6 +132,11 @@ body {
     font-weight: 600;
     transition: color 0.3s ease;
     position: relative;
+}
+
+.nav-link:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -499,6 +512,15 @@ iframe {
     border-radius: 10px;
     object-fit: cover;
     image-rendering: -webkit-optimize-contrast; /* لزيادة حدة التفاصيل */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 

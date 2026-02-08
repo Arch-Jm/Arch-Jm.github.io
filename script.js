@@ -231,24 +231,37 @@ document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
     
     // تهيئة معرض الصور
-     function initGalleryBySection(sectionId, categoryName) {
+// تهيئة معرض الصور المحسن للأداء والوصول
+function initGalleryBySection(sectionId, categoryName) {
     const container = document.getElementById(sectionId);
     if (!container) return;
 
+    // تنظيف الحاوية قبل الإضافة لتجنب التكرار
+    container.innerHTML = '';
+
     const filteredImages = galleryImages.filter(img => img.category === categoryName);
 
-    filteredImages.forEach((image, index) => {
+    filteredImages.forEach((image) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = `gallery-item ${image.category}`;
-        // ملاحظة: الـ index هون لازم يكون مطابق للمصفوفة الأصلية عشان الـ Lightbox يشتغل صح
+        
+        // إيجاد الفهرس الأصلي لضمان عمل الـ Lightbox بشكل صحيح
         const originalIndex = galleryImages.findIndex(img => img.id === image.id);
         
+        // تحسين الـ HTML:
+        // 1. إضافة loading="lazy" لتسريع تحميل الصفحة على الموبايل.
+        // 2. استخدام وسم <h4> متوافق مع الترجمة الحالية.
         galleryItem.innerHTML = `
-            <img src="${image.src}" alt="${image.title.he}" loading="lazy">
+            <img src="${image.src}" 
+                 alt="${image.title[currentLang] || image.title.he}" 
+                 loading="lazy" 
+                 decoding="async">
             <div class="gallery-item-overlay">
-                <h4>${image.title[currentLang]}</h4>
+                <p style="color: white; font-weight: 600;">${image.title[currentLang]}</p>
             </div>
         `;
+
+        // إضافة مستمع الأحداث لفتح الصورة
         galleryItem.addEventListener('click', () => openLightbox(originalIndex));
         container.appendChild(galleryItem);
     });

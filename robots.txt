@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# ربط ملف الـ Sitemap اللي أنت جهزته
 Sitemap: https://arch-jm.github.io/sitemap.xml

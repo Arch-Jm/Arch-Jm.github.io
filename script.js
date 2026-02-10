@@ -216,8 +216,8 @@ const galleryImages = [
 	{ id: 7, src: "assets/Project/kitchen01/Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
 	{ id: 8, src: "assets/Project/kitchen01/Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
 	{ id: 9, src: "assets/Project/kitchen01/Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 10, src: "assets/Project/kitchen01/Kitchen10-02-1.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "مطبخ عصري [ تحديث 10-02-2026 ]" } },
-	{ id: 11, src: "assets/Project/kitchen01/Kitchen10-02-2.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "[ تحديث 10-02-2026 ] مطبخ عصري" } },
+	{ id: 10, src: "assets/Project/kitchen01/kitchen10-02-1.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "مطبخ عصري [ تحديث 10-02-2026 ]" } },
+	{ id: 11, src: "assets/Project/kitchen01/kitchen10-02-2.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "[ تحديث 10-02-2026 ] مطبخ عصري" } },
   ];
 
 // المتغيرات العامة

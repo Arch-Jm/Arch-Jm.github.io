@@ -993,13 +993,13 @@ body {
 
 
 /* إظهار أيقونات السوشيال ميديا */
-.social-links {
+/* .social-links {
     display: flex !important;
     gap: 20px;
     margin-top: 15px;
     align-items: center;
     justify-content: flex-start; /* عشان يضلوا عاليمين بما إن الموقع RTL */
-}
+/*}*/
 
 .social-icon {
     display: flex !important;

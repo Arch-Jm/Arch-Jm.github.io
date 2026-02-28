@@ -986,31 +986,47 @@ body {
     }
 }
 
-/* إخفاء أي روابط سوشيال ميديا قديمة */
-.social-links a:not(.whatsapp-btn) {
-    display: none;
-}
-
-/* تنسيق زر الواتساب الجديد */
-.whatsapp-btn {
-    display: inline-flex !important;
-    align-items: center;
-    background-color: #25D366 !important; /* لون واتساب الأصلي */
-    color: white !important;
-    padding: 12px 25px !important;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    gap: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
-}
-
-.whatsapp-btn:hover {
-    background-color: #128C7E !important;
-    transform: translateY(-3px);
-}
 
 .wa-text {
     font-size: 1rem;
+}
+
+
+/* إظهار أيقونات السوشيال ميديا */
+.social-links {
+    display: flex !important;
+    gap: 20px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: flex-start; /* عشان يضلوا عاليمين بما إن الموقع RTL */
+}
+
+.social-icon {
+    display: flex !important;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem; /* حجم الأيقونة */
+    transition: 0.3s;
+}
+
+.instagram-btn {
+    color: #E1306C !important; /* لون إنستا */
+}
+
+.youtube-btn {
+    color: #FF0000 !important; /* لون يوتيوب */
+}
+
+.social-text {
+    font-size: 1rem;
+    margin-right: 8px; /* مسافة بين الأيقونة والنص */
+    color: #333; /* أو اللون اللي بتفضله */
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تعديل بسيط للهواتف */
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+    }
 }

@@ -28,7 +28,7 @@ const translations = {
 		
 		// قسم الفيديو
 		video: "סרטונים",
-		videoTitle: "אוטומציה בשרטוט: ליספים ובלוקים חכמים",
+		videoTitle: "מדריך לסרגל הכלים של JTool",
 		videoNotSupported: "הדפדפן שלך אינו תומך בהפעלת סרטונים.",
 		video1Title: "הוספת מידות ב אותוקאד",
 		video2Title: "תכנות ליספים: ייעול ושיפור תהליכי עבודה",
@@ -98,7 +98,7 @@ const translations = {
 		portfolioSubtitle1: "Modern Kitchin",
 		
 		video: "Videos",
-		videoTitle: "CAD Automation: Lisp & Smart Blocks",
+		videoTitle: "JTool Toolbar Guide",
 		videoNotSupported: "Your browser does not support video playback.",
 		video1Title: "Add Dimantion Short Way",
 		video2Title: "Lisp Programming: Optimizing Workflow Efficiency",
@@ -162,7 +162,7 @@ automationService: "AutoCAD Automation Development",
 		portfolioSubtitle1: "مطبخ عصري",
 		
 		video: "فيديوهات",
-		videoTitle: "أتمتة الرسم الهندسي: Lisp و Blocks ذكية",
+		videoTitle: "دليل شريط أدوات JTool",
 		videoNotSupported: "متصفحك لا يدعم تشغيل الفيديو.",
 		video1Title: "اضافة قياسات باسهل طريقه",
 		video2Title: "برمجيات Lisp: تحسين كفاءة وسير العمل",

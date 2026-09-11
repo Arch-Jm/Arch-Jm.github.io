@@ -30,7 +30,7 @@ const translations = {
 		video: "סרטונים",
 		videoTitle: "אוטומציה בשרטוט: ליספים ובלוקים חכמים",
 		videoNotSupported: "הדפדפן שלך אינו תומך בהפעלת סרטונים.",
-		video1Title: "הכוח של בלוקים דינמיים: חיסכון בזמן",
+		video1Title: "הוספת מידות ב אותוקאד",
 		video2Title: "תכנות ליספים: ייעול ושיפור תהליכי עבודה",
 		video3Title: "תהליך עיצוב פנים",
                
@@ -100,7 +100,7 @@ const translations = {
 		video: "Videos",
 		videoTitle: "CAD Automation: Lisp & Smart Blocks",
 		videoNotSupported: "Your browser does not support video playback.",
-		video1Title: "The Power of Dynamic Blocks: Save Your Time",
+		video1Title: "Add Dimantion Short Way",
 		video2Title: "Lisp Programming: Optimizing Workflow Efficiency",
 		video3Title: "Interior Design Process",
                
@@ -164,7 +164,7 @@ automationService: "AutoCAD Automation Development",
 		video: "فيديوهات",
 		videoTitle: "أتمتة الرسم الهندسي: Lisp و Blocks ذكية",
 		videoNotSupported: "متصفحك لا يدعم تشغيل الفيديو.",
-		video1Title: "قوة البلوكات الديناميكية: اختصر وقتك",
+		video1Title: "اضافة قياسات باسهل طريقه",
 		video2Title: "برمجيات Lisp: تحسين كفاءة وسير العمل",
 		video3Title: "عملية التصميم الداخلي",
               

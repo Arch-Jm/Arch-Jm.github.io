@@ -31,8 +31,8 @@ const translations = {
 		videoTitle: "מדריך לסרגל הכלים של JTool",
 		videoNotSupported: "הדפדפן שלך אינו תומך בהפעלת סרטונים.",
 		video1Title: "הוספת מידות ב אותוקאד",
-		video2Title: "תכנות ליספים: ייעול ושיפור תהליכי עבודה",
-		video3Title: "תהליך עיצוב פנים",
+		video2Title: "מפלסים דינאמי",
+		video3Title: "הוספת בלוקים דינאמי",
                
         // قسم الخدمات
         servicesTitle: "השירותים",
@@ -101,8 +101,8 @@ const translations = {
 		videoTitle: "JTool Toolbar Guide",
 		videoNotSupported: "Your browser does not support video playback.",
 		video1Title: "Add Dimantion Short Way",
-		video2Title: "Lisp Programming: Optimizing Workflow Efficiency",
-		video3Title: "Interior Design Process",
+		video2Title: "Daynmic Level",
+		video3Title: "Insert Dynamic Blocks",
                
         servicesTitle: "Services",
         service1: "Architectural Planning",
@@ -165,8 +165,8 @@ automationService: "AutoCAD Automation Development",
 		videoTitle: "دليل شريط أدوات JTool",
 		videoNotSupported: "متصفحك لا يدعم تشغيل الفيديو.",
 		video1Title: "اضافة قياسات باسهل طريقه",
-		video2Title: "برمجيات Lisp: تحسين كفاءة وسير العمل",
-		video3Title: "عملية التصميم الداخلي",
+		video2Title: "وضع مناسيب اوتوماتكيه",
+		video3Title: "اضافة بلوكات متغيرة",
               
         servicesTitle: "الخدمة",
         service1: "التخطيط المعماري",

@@ -33,6 +33,9 @@ const translations = {
 		video1Title: "הוספת מידות ב אותוקאד",
 		video2Title: "מפלסים דינאמי",
 		video3Title: "הוספת בלוקים דינאמי",
+		video4Title: "שרטוט קירות מתקדם",
+		video5Title: "שרטוט מעקות מתקדם",
+		video6Title: "שליטה וניהול האצ'ים באוטוקאד",
                
         // قسم الخدمات
         servicesTitle: "השירותים",
@@ -103,6 +106,9 @@ const translations = {
 		video1Title: "Add Dimantion Short Way",
 		video2Title: "Daynmic Level",
 		video3Title: "Insert Dynamic Blocks",
+		video4Title: "Draw Wall",
+		video5Title: "Draw Rail",
+		video6Title: "hatch",
                
         servicesTitle: "Services",
         service1: "Architectural Planning",
@@ -167,6 +173,9 @@ automationService: "AutoCAD Automation Development",
 		video1Title: "اضافة قياسات باسهل طريقه",
 		video2Title: "وضع مناسيب اوتوماتكيه",
 		video3Title: "اضافة بلوكات متغيرة",
+		video4Title: "رسم جدران متقدم",
+		video5Title: "رسم درابزين متقدم",
+		video6Title: "تحكم وادارة الهيتش",
               
         servicesTitle: "الخدمة",
         service1: "التخطيط المعماري",

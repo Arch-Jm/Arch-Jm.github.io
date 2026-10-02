@@ -36,6 +36,14 @@ const translations = {
 		video4Title: "שרטוט קירות מתקדם",
 		video5Title: "שרטוט מעקות מתקדם",
 		video6Title: "שליטה וניהול האצ'ים באוטוקאד",
+		video7Title: "מספור אוטומטי באוטוקאד",
+		video8Title: "כלי מפלסים ושיפועים באוטוקאד",
+		video9Title: "חישוב שטחים באוטוקאד",
+		video10Title: "ספירת בלוקים באוטוקאד",
+		video11Title: "קווי עזר באוטוקאד",
+		video12Title: "מעקב שעות עבודה באוטוקאד",
+
+
                
         // قسم الخدمات
         servicesTitle: "השירותים",
@@ -108,7 +116,13 @@ const translations = {
 		video3Title: "Insert Dynamic Blocks",
 		video4Title: "Draw Wall",
 		video5Title: "Draw Rail",
-		video6Title: "hatch",
+		video6Title: "AutoCAD Hatch Tools Tutorial",
+		video7Title: "AutoCAD Automatic Numbering Tool",
+		video8Title: "AutoCAD Levels Slopes Tools",
+		video9Title: "AutoCAD Area Calculation Tool",
+		video10Title: "AutoCAD Blocks Quantity Report",
+		video11Title: "AutoCAD Construction Lines Tool",
+		video12Title: "AutoCAD Work Hours Tracker",
                
         servicesTitle: "Services",
         service1: "Architectural Planning",
@@ -176,6 +190,12 @@ automationService: "AutoCAD Automation Development",
 		video4Title: "رسم جدران متقدم",
 		video5Title: "رسم درابزين متقدم",
 		video6Title: "تحكم وادارة الهيتش",
+		video7Title: "الترقيم التلقائي في أوتوكاد",
+		video8Title: "أدوات المناسيب والميول بأوتوكاد",
+		video9Title: "حساب المساحات في أوتوكاد",
+		video10Title: "حصر البلوكات في أوتوكاد",
+		video11Title: "خطوط المساعدة في أوتوكاد",
+		video12Title: "تتبع ساعات العمل بأوتوكاد",
               
         servicesTitle: "الخدمة",
         service1: "التخطيط المعماري",

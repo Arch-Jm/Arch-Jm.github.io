@@ -1,139 +1,145 @@
-// بيانات الترجمة للغات المختلفة
+// بيانات الترجمة للغات المختلفة شاملة بيانات SEO
 const translations = {
     he: {
-        // التنقل
+        metaTitle: "ג'וני מחול | ArchJm - אדריכל ומפתח אוטומציה ב-AutoCAD",
+        metaDesc: "ג'וני מחול | ArchJm - הנדסאי אדריכלות ומפתח כלי אוטומציה וליספים ב-AutoCAD (JohnnyTools) החוסכים עד 70% מזמן השרטוט.",
+        logoName: "ג'וני מחול",
         home: "דף הבית",
         about: "אודות",
-        portfolio: "פרויקט",
+        portfolio: "תיק עבודות",
         services: "שירותים",
         contact: "צור קשר",
         
-        // قسم البطل
         heroTitle: "ג'וני מח'ול | אדריכל",
         heroSubtitle: "הנדסאי אדריכלות ותוכנה, שואף תמיד להשיג את התוצאות הטובות ביותר במינימום זמן",
         getQuote: "ליצירת קשר",
         
-        // قسم حول
         aboutTitle: "אודות",
-        aboutText1: "מומחה בשרטוט מדויק ובבניית בלוקים חכמים לייעול העבודה, בעל יכולת יצירתית לפתרון חללים אדריכליים",
+        aboutText1: "מומחה בשרטוט מדויק ובבניית בלוקים חכמים לייעול העבודה, בעל יכולת יצירתית לפתרון חללים אדריכליים.",
         aboutText2: "רכשתי את ניסיוני באמצעות למידה עצמית במהלך לימודיי האקדמיים, ואני פועל לשיפור מתמיד בכל הזדמנות.",
-        yearsExp: "שנות ניסיון",
-        projectsDone: "פרויקטים שהושלמו",
-        awards: "פרסים מקצועיים",
         
-        // قسم المعرض 
         portfolioTitle: "תיק עבודות",
         portfolioSubtitle: "פרויקט גמר",
-		portfolioSubtitle1: "מטבח מודרני",
-		
-		// قسم الفيديو
-		video: "סרטונים",
-		videoTitle: "מדריך לסרגל הכלים של JTool",
-		videoNotSupported: "הדפדפן שלך אינו תומך בהפעלת סרטונים.",
-		video1Title: "הוספת מידות ב אותוקאד",
-		video2Title: "מפלסים דינאמי",
-		video3Title: "הוספת בלוקים דינאמי",
-		video4Title: "שרטוט קירות מתקדם",
-		video5Title: "שרטוט מעקות מתקדם",
-		video6Title: "שליטה וניהול האצ'ים באוטוקאד",
-		video7Title: "מספור אוטומטי באוטוקאד",
-		video8Title: "כלי מפלסים ושיפועים באוטוקאד",
-		video9Title: "חישוב שטחים באוטוקאד",
-		video10Title: "ספירת בלוקים באוטוקאד",
-		video11Title: "קווי עזר באוטוקאד",
-		video12Title: "מעקב שעות עבודה באוטוקאד",
+        portfolioSubtitle1: "מטבח מודרני",
+        
+        video: "סרטונים",
+        videoTitle: "מדריך לסרגל הכלים של JTool",
+        video1Title: "הוספת מידות באוטוקאד",
+        video2Title: "מפלסים דינאמי",
+        video3Title: "הוספת בלוקים דינאמי",
+        video4Title: "שרטוט קירות מתקדם",
+        video5Title: "שרטוט מעקות מתקדם",
+        video6Title: "שליטה וניהול האצ'ים באוטוקאד",
+        video7Title: "מספור אוטומטי באוטוקאד",
+        video8Title: "כלי מפלסים ושיפועים באוטוקאד",
+        video9Title: "חישוב שטחים באוטוקאד",
+        video10Title: "ספירת בלוקים באוטוקאד",
+        video11Title: "קווי עזר באוטוקאד",
+        video12Title: "מעקב שעות עבודה באוטוקאד",
 
-
-               
-        // قسم الخدمات
-        servicesTitle: "השירותים",
+        servicesTitle: "השירותים שלנו",
         service1: "תכנון אדריכלי",
         service1Text: "תכנון מלא של מבנים בהתאם לדרישות הלקוח ותקני הבנייה העדכניים.",
-        service2: "בנייה ותכנון עירוני",
-        service2Text: "פיתוח פרויקטים עירוניים מורכבים תוך התחשבות בסביבה ובקהילה.",
         service3: "עיצוב פנים",
         service3Text: "יצירת חללים פנימיים פונקציונליים ואסתטיים המותאמים אישית.",
-        service4: "פיתוח תוספים",
-        service4Text: "תכנון מבנים חכמים וחסכוניים באנרגיה התורמים לאיכות הסביבה.",
+        automationService: "פיתוח כלי אוטומציה לאוטוקאד",
+        automationDesc: "פיתוח תוספים (Plugins) וכלים מותאמים אישית החוסכים עד 70% מזמן השרטוט והעבודה.",
         
-        // نموذج الاتصال
         contactTitle: "צור קשר",
         contactInfo: "פרטי התקשרות",
-        address: "רחוב: פקעין (בוקייעה) , צפון ישראיל",
+        address: "רחוב: פקעין (בוקייעה) , צפון ישראל",
         fullName: "שם מלא",
         email: "אימייל",
         phone: "טלפון",
         selectService: "בחר סוג שירות",
         serviceOption1: "תכנון אדריכלי",
-        serviceOption2: "תכנון עירוני",
         serviceOption3: "עיצוב פנים",
-        serviceOption4: "פיתוח תוספים",
+        serviceOption4: "פיתוח תוספים לאוטוקאד",
         message: "הודעה",
         sendMessage: "שלח הודעה",
         
-        // التذييل
+        footerLogo: "עיצוב אדריכלי ואוטומציה",
         footerText: "אשמח לשיתוף פעולה פורה ומקצועי איתכם",
+        copyrightText: "כל הזכויות שמורות - ג'וני מחול",
+        
+        premiumTitle: "חבילת הכלים המקצועית - JohnnyTools",
+        premiumDesc: "שדרג את העבודה שלך עם מערכת אוטומציה מלאה ◾ הכוללת רישוי שנתי ותמיכה טכנית",
+        downloadPro: "רכישת רישיון / PRO",
+        downloadFree: "הורדה בחינם (Free Kit)",
+        downloadTool: "הורד כלי",
 		
 		
-		premiumTitle: "חבילת הכלים המקצועית - JohnnyTools",
-		premiumDesc: "שדרג את העבודה שלך עם מערכת אוטומציה מלאה ◾ הכוללת רישוי שנתי ותמיכה טכנית",
-downloadPro: "רכישת רישיון / PRO",
-downloadFree: "הורדה בחינם (Free Kit)",
+		compTitle: "השוואת גרסאות מלאה - PRO מול Free",
+		compFeature: "כלי / קטגוריה באוטוקאד",
+		compFree: "גרסת Free (סרגל אחד)",
+		compPro: "גרסת PRO (11 סרגלי כלים)",
+		catGeneral: "כלים כלליים ותבניות",
+		compBasicGeneral: "בסיסי (RE, FL, תיקון פונט)",
+		compProGeneral: "מלא + Smart Sketch ותבניות",
+		catArch: "שרטוט אדריכלי (Architectural)",
+		compWallOnly: "שרטוט קירות בלבד (DW)",
+		compFullArch: "קירות + מדרגות (SS) + מעקות (Rail)",
+		catBlocks: "ניהול בלוקים (Block Tools)",
+		compInsertOnly: "הוספת בלוקים בלבד",
+		compFullBlocks: "הוספה + שכפול חכם (DUPBLK)",
+		catLevels: "כלי מפלסים (Level Tools)",
+		catWorkLog: "מעקב שעות עבודה (Work Log)",
+		catDim: "כלי מידות מהירים (DIM Tools)",
+		catHatch: "ניהול האצ'ים והצללות (Hatch Tools)",
+		catNum: "מספור אוטומטי וסידור בלוקים (Number Tools)",
+		catLandscape: "פיתוח שטח ושיפועים (Landscaping)",
+		catPermit: "רישוי, חישוב שטחים וכמויות (Permitting)",
+		catXLines: "קווי עזר לחתכים וחזיתות (Helper Lines)",
 		
-		downloadTool: "הורד כלי", // النص اللي بيظهر في الزر
-		
-		automationService: "פיתוח כלי אוטומציה לאוטוקאד",
-    automationDesc: "פיתוח תוספים (Plugins) וכלים מותאמים אישית החוסכים עד 70% מזמן השרטוט והעבודה.",
-		
+        
+        formSuccess: "ההודעה נשלחה בהצלחה! אחזור אליך בהקדם.",
+        formError: "אירעה שגיאה בשליחת ההודעה. אנא נסה שוב."
     },
-	
+    
     en: {
+        metaTitle: "Johnny Makhoul | ArchJm - Architect & AutoCAD Automation Expert",
+        metaDesc: "Johnny Makhoul | ArchJm - Architectural Planning, Interior Design, and custom AutoCAD Automation plugins (JohnnyTools) saving up to 70% drafting time.",
+        logoName: "Johnny Makhoul",
         home: "Home",
         about: "About",
         portfolio: "Portfolio",
         services: "Services",
         contact: "Contact",
         
-        heroTitle: "Johnny Makhoul | Architectural",
+        heroTitle: "Johnny Makhoul | Architect",
         heroSubtitle: "Architectural and Software Associate Engineer, consistently striving to deliver high-quality results with maximum efficiency.",
-        getQuote: "Contact me",
+        getQuote: "Contact Me",
         
-        aboutTitle: "About me",
+        aboutTitle: "About Me",
         aboutText1: "Specialist in precision drafting and creating dynamic blocks to streamline workflows, with a creative flair for spatial problem-solving.",
         aboutText2: "Self-taught expert with a strong academic foundation, dedicated to continuous professional growth and seizing every learning opportunity.",
-        yearsExp: "Years of Experience",
-        projectsDone: "Projects Completed",
-        awards: "Professional Awards",
         
         portfolioTitle: "Portfolio",
-        portfolioSubtitle: "Final project",
-		portfolioSubtitle1: "Modern Kitchin",
-		
-		video: "Videos",
-		videoTitle: "JTool Toolbar Guide",
-		videoNotSupported: "Your browser does not support video playback.",
-		video1Title: "Add Dimantion Short Way",
-		video2Title: "Daynmic Level",
-		video3Title: "Insert Dynamic Blocks",
-		video4Title: "Draw Wall",
-		video5Title: "Draw Rail",
-		video6Title: "AutoCAD Hatch Tools Tutorial",
-		video7Title: "AutoCAD Automatic Numbering Tool",
-		video8Title: "AutoCAD Levels Slopes Tools",
-		video9Title: "AutoCAD Area Calculation Tool",
-		video10Title: "AutoCAD Blocks Quantity Report",
-		video11Title: "AutoCAD Construction Lines Tool",
-		video12Title: "AutoCAD Work Hours Tracker",
+        portfolioSubtitle: "Final Project",
+        portfolioSubtitle1: "Modern Kitchen",
+        
+        video: "Videos",
+        videoTitle: "JTool Toolbar Guide",
+        video1Title: "Add Dimensions Fast",
+        video2Title: "Dynamic Levels",
+        video3Title: "Insert Dynamic Blocks",
+        video4Title: "Advanced Wall Drawing",
+        video5Title: "Advanced Rail Drawing",
+        video6Title: "AutoCAD Hatch Management",
+        video7Title: "AutoCAD Automatic Numbering",
+        video8Title: "AutoCAD Levels & Slopes Tools",
+        video9Title: "AutoCAD Area Calculation",
+        video10Title: "AutoCAD Blocks Quantity Report",
+        video11Title: "AutoCAD Construction Lines",
+        video12Title: "AutoCAD Work Hours Tracker",
                
         servicesTitle: "Services",
         service1: "Architectural Planning",
         service1Text: "Complete planning of buildings according to client requirements and current building standards.",
-        service2: "Urban Planning",
-        service2Text: "Development of complex urban projects with consideration for the environment and community.",
         service3: "Interior Design",
         service3Text: "Creating functional and aesthetic interior spaces tailored to individual needs.",
-        service4: "Sustainable Construction",
-        service4Text: "Planning smart and energy-efficient buildings that contribute to environmental quality.",
+        automationService: "AutoCAD Automation Development",
+        automationDesc: "Developing custom plugins and tools that save up to 70% of drafting and workflow time.",
         
         contactTitle: "Contact Us",
         contactInfo: "Contact Information",
@@ -143,25 +149,52 @@ downloadFree: "הורדה בחינם (Free Kit)",
         phone: "Phone",
         selectService: "Select Service Type",
         serviceOption1: "Architectural Planning",
-        serviceOption2: "Urban Planning",
         serviceOption3: "Interior Design",
-        serviceOption4: "Plugin development",
+        serviceOption4: "AutoCAD Plugin Development",
         message: "Message",
         sendMessage: "Send Message",
+        
+        footerLogo: "Architecture & Automation",
         footerText: "I look forward to working with you and delivering a valuable experience.",
+        copyrightText: "All rights reserved - Johnny Makhoul",
+        
+        premiumTitle: "Premium Toolset - JohnnyTools",
+        premiumDesc: "Upgrade your workflow with a full automation system ◾ Annual license and technical support included",
+        downloadPro: "Get Pro License",
+        downloadFree: "Download Free Kit",
+        downloadTool: "Download Tool",
 		
-		premiumTitle: "Premium Toolset - JohnnyTools",
-		premiumDesc: "Upgrade your workflow with a full automation system ◾ Annual license and technical support included",
-downloadPro: "Get Pro License",
-downloadFree: "Download Free Kit",
-		
-		downloadTool: "Download Tool",
-		
-automationService: "AutoCAD Automation Development",
-    automationDesc: "Developing custom plugins and tools that save up to 70% of drafting and workflow time.",
-		
+		// 2. أضف داخل translations.en:
+		compTitle: "Full Version Comparison - PRO vs Free",
+		compFeature: "AutoCAD Tool / Category",
+		compFree: "Free Kit (1 Toolbar)",
+		compPro: "PRO Version (11 Toolbars)",
+		catGeneral: "General Tools & Templates",
+		compBasicGeneral: "Basic (RE, FL, Font Fix)",
+		compProGeneral: "Full + Smart Sketch & Templates",
+		catArch: "Architectural Drafting",
+		compWallOnly: "Draw Wall Only (DW)",
+		compFullArch: "Walls + Stairs (SS) + Railings (Rail)",
+		catBlocks: "Block Management",
+		compInsertOnly: "Insert Block Only",
+		compFullBlocks: "Insert + Smart Duplicate (DUPBLK)",
+		catLevels: "Dynamic Level Tools",
+		catWorkLog: "Work Hours Tracker (Work Log)",
+		catDim: "Quick Dimensions (DIM Tools)",
+		catHatch: "Hatch Management & Cylindrical Shading",
+		catNum: "Auto Numbering & Path Array Tools",
+		catLandscape: "Landscaping & Auto Slopes",
+		catPermit: "Permitting, Area Tables & Block Count",
+		catXLines: "Section & Elevation Helper Lines (XLines)",
+        
+        formSuccess: "Message sent successfully! I will get back to you soon.",
+        formError: "An error occurred while sending. Please try again."
     },
+
     ar: {
+        metaTitle: "جوني مخول | ArchJm - مهندس معماري ومطور أتمتة أوتوكاد",
+        metaDesc: "جوني مخول | ArchJm - تصميم معماري وداخلي وتطوير إضافات وأدوات أتمتة الأوتوكاد الاحترافية (JohnnyTools) لتوفير 70% من وقت الرسم.",
+        logoName: "جوني مخول",
         home: "الرئيسية",
         about: "عني",
         portfolio: "المشاريع",
@@ -169,45 +202,39 @@ automationService: "AutoCAD Automation Development",
         contact: "اتصل بنا",
         
         heroTitle: "جوني مخول | معماري",
-        heroSubtitle: "هندسي عمارة وبرمجيات، يسعى دائماً لتحقيق أقصى كفاءة وأفضل النتائج في أقل زمن ممكن.",
+        heroSubtitle: "مهندس معماري ومطور برمجيات، أسعى دائماً لتحقيق أقصى كفاءة وأفضل النتائج في أقل زمن ممكن.",
         getQuote: "للتواصل معي",
         
         aboutTitle: "عني",
-        aboutText1: "متخصص في الرسم الهندسي الدقيق وتطوير النماذج الذكية (Blocks) لتسريع الأداء، مع مهارة في إيجاد حلول إبداعية للفراغات المعمارية.",
-        aboutText2: "عززتُ مهاراتي عبر التعلم الذاتي المكثف بالتوازي مع دراستي الأكاديمية، وألتزم بالتطوير المستمر لمهاراتي مع كل فرصة متاحة.",
-        yearsExp: "سنوات الخبرة",
-        projectsDone: "مشروع مكتمل",
-        awards: "جوائز مهنية",
+        aboutText1: "متخصص في الرسم الهندسي الدقيق وتطوير البلوكات الذكية لتسريع الأداء، مع مهارة في إيجاد حلول إبداعية للفراغات المعمارية.",
+        aboutText2: "عززتُ مهاراتي عبر التعلم الذاتي المكثف بالتوازي مع دراستي الأكاديمية، وألتزم بالتطوير المستمر مع كل فرصة متاحة.",
         
         portfolioTitle: "معرض الأعمال",
         portfolioSubtitle: "المشروع النهائي",
-		portfolioSubtitle1: "مطبخ عصري",
-		
-		video: "فيديوهات",
-		videoTitle: "دليل شريط أدوات JTool",
-		videoNotSupported: "متصفحك لا يدعم تشغيل الفيديو.",
-		video1Title: "اضافة قياسات باسهل طريقه",
-		video2Title: "وضع مناسيب اوتوماتكيه",
-		video3Title: "اضافة بلوكات متغيرة",
-		video4Title: "رسم جدران متقدم",
-		video5Title: "رسم درابزين متقدم",
-		video6Title: "تحكم وادارة الهيتش",
-		video7Title: "الترقيم التلقائي في أوتوكاد",
-		video8Title: "أدوات المناسيب والميول بأوتوكاد",
-		video9Title: "حساب المساحات في أوتوكاد",
-		video10Title: "حصر البلوكات في أوتوكاد",
-		video11Title: "خطوط المساعدة في أوتوكاد",
-		video12Title: "تتبع ساعات العمل بأوتوكاد",
+        portfolioSubtitle1: "مطبخ عصري",
+        
+        video: "فيديوهات",
+        videoTitle: "دليل شريط أدوات JTool",
+        video1Title: "إضافة قياسات بأسهل طريقة",
+        video2Title: "وضع مناسيب أوتوماتيكية",
+        video3Title: "إضافة بلوكات ديناميكية",
+        video4Title: "رسم جدران متقدم",
+        video5Title: "رسم درابزين متقدم",
+        video6Title: "تحكم وإدارة الهاتش",
+        video7Title: "الترقيم التلقائي في أوتوكاد",
+        video8Title: "أدوات المناسيب والميول بأوتوكاد",
+        video9Title: "حساب المساحات في أوتوكاد",
+        video10Title: "حصر البلوكات في أوتوكاد",
+        video11Title: "خطوط المساعدة في أوتوكاد",
+        video12Title: "تتبع ساعات العمل بأوتوكاد",
               
-        servicesTitle: "الخدمة",
+        servicesTitle: "الخدمات",
         service1: "التخطيط المعماري",
         service1Text: "التخطيط الكامل للمباني وفقًا لمتطلبات العملاء ومعايير البناء الحالية.",
-        service2: "التخطيط الحضري",
-        service2Text: "تطوير مشاريع حضرية معقدة مع مراعاة البيئة والمجتمع.",
         service3: "التصميم الداخلي",
         service3Text: "إنشاء مساحات داخلية وظيفية وجمالية مصممة خصيصًا للاحتياجات الفردية.",
-        service4: "البناء المستدام",
-        service4Text: "تخطيط مباني ذكية موفرة للطاقة تساهم في جودة البيئة.",
+        automationService: "تطوير أدوات الأتمتة للأوتوكاد",
+        automationDesc: "تطوير إضافات (Plugins) وأدوات مخصصة توفر ما يصل إلى 70% من وقت الرسم والعمل.",
         
         contactTitle: "اتصل بنا",
         contactInfo: "معلومات الاتصال",
@@ -217,302 +244,271 @@ automationService: "AutoCAD Automation Development",
         phone: "الهاتف",
         selectService: "اختر نوع الخدمة",
         serviceOption1: "التخطيط المعماري",
-        serviceOption2: "التخطيط الحضري",
         serviceOption3: "التصميم الداخلي",
-        serviceOption4: "تطوير الإضافات",
+        serviceOption4: "تطوير إضافات أوتوكاد",
         message: "الرسالة",
         sendMessage: "إرسال الرسالة",
+        
+        footerLogo: "التصميم المعماري والأتمتة",
         footerText: "يسعدني التعامل معكم، وأتمنى لكم تجربة عمل مثمرة.",
+        copyrightText: "جميع الحقوق محفوظة - جوني مخول",
+        
+        premiumTitle: "مجموعة الأدوات الاحترافية - JohnnyTools",
+        premiumDesc: "ارتقِ بعملك مع نظام أتمتة متكامل ◾ يتضمن ترخيصاً سنوياً ودعماً فنياً متواصلاً",
+        downloadPro: "ترخيص النسخة الاحترافية (PRO)",
+        downloadFree: "تحميل النسخة المجانية (Free)",
+        downloadTool: "تحميل الأداة",
 		
-		premiumTitle: "مجموعة الأدوات المميزة - JohnnyTools",
-		premiumDesc: "ارتقِ بعملك مع نظام أتمتة كامل ◾ يتضمن ترخيصاً سنوياً ودعماً فنياً متواصلاً",
-downloadPro: "ترخيص النسخة الاحترافية (PRO)",
-downloadFree: "تحميل النسخة المجانية (Free)",
-		
-		downloadTool: "تحميل الأداة",
-		
-		automationService: "تطوير أدوات الأتمتة للأوتوكاد",
-    automationDesc: "تطوير إضافات (Plugins) وأدوات مخصصة توفر ما يصل إلى 70% من وقت الرسم والعمل العملي.",
-		
+		// 3. أضف داخل translations.ar:
+		compTitle: "مقارنة شاملة بين النسختين - PRO مقابل Free",
+		compFeature: "الأداة / القسم في أوتوكاد",
+		compFree: "النسخة المجانية (شريط واحد)",
+		compPro: "نسخة PRO (11 شريط أدوات)",
+		catGeneral: "أدوات عامة وقوالب ذكية",
+		compBasicGeneral: "أساسي (RE, FL, إصلاح الخط)",
+		compProGeneral: "كامل + Smart Sketch وقوالب جاهزة",
+		catArch: "الرسم المعماري (Architectural)",
+		compWallOnly: "رسم الجدران فقط (DW)",
+		compFullArch: "جدران + أدراج (SS) + درابزين (Rail)",
+		catBlocks: "إدارة البلوكات (Block Tools)",
+		compInsertOnly: "إدراج بلوكات فقط",
+		compFullBlocks: "إدراج + تكرار ذكي (DUPBLK)",
+		catLevels: "أدوات المناسيب الديناميكية (Levels)",
+		catWorkLog: "سجل تتبع ساعات العمل (Work Log)",
+		catDim: "أدوات الأبعاد السريعة (DIM Tools)",
+		catHatch: "إدارة الهاتش والظلال الأسطوانية (Hatch)",
+		catNum: "الترقيم التلقائي وتوزيع البلوكات بالمسار",
+		catLandscape: "تنسيق المواقع وحساب الميول التلقائي",
+		catPermit: "التراخيص وجداول المساحات وحصر الكميات",
+		catXLines: "خطوط الإسقاط للمقاطع والواجهات (XLines)",
+        
+        formSuccess: "تم إرسال رسالتك بنجاح! سأتواصل معك قريباً.",
+        formError: "حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى."
     }
 };
 
 // بيانات الصور للمعرض
 const galleryImages = [
-    { id: 1, src: "assets/Project/FinalProject/Library-img-1.webp", category: "library",  title: { he: "כניסה לספרייה", en: "Library entrance", ar: "واجهة المكتبة" } },
-    { id: 2, src: "assets/Project/FinalProject/Library-img-2.webp", category: "library", title: { he: "חזית דרומית", en: "South facade", ar: "الواجهة الجنوبية" } },
+    { id: 1, src: "assets/Project/FinalProject/Library-img-1.webp", category: "library", title: { he: "כניסה לספרייה", en: "Library Entrance", ar: "واجهة المكتبة" } },
+    { id: 2, src: "assets/Project/FinalProject/Library-img-2.webp", category: "library", title: { he: "חזית דרומית", en: "South Facade", ar: "الواجهة الجنوبية" } },
     { id: 3, src: "assets/Project/FinalProject/Library-img-3.webp", category: "library", title: { he: "עיצוב פנים מודרני", en: "Modern Interior Design", ar: "تصميم داخلي حديث" } },
-    { id: 4, src: "assets/Project/FinalProject/Library-Plan-1.webp", category: "library", title: { he: "תוכנית קרקע", en: "Plan", ar: "تخطيط الطابق الارضي" } },
-    { id: 5, src: "assets/Project/FinalProject/Library-Section-1.webp", category: "library", title: { he: "חתכים", en: "Sections", ar: "مقاطع" } },
-    { id: 6, src: "assets/Project/FinalProject/Library-Details-1.webp", category: "library", title: { he: "פרטים", en: "Details", ar: "تفاصيل" } },
-	{ id: 7, src: "assets/Project/kitchen01/Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 8, src: "assets/Project/kitchen01/Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 9, src: "assets/Project/kitchen01/Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני", en: "modern Kitchin", ar: "مطبخ عصري" } },
-	{ id: 10, src: "assets/Project/kitchen01/kitchen10-02-1.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "مطبخ عصري [ تحديث 10-02-2026 ]" } },
-	{ id: 11, src: "assets/Project/kitchen01/kitchen10-02-2.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "modern Kitchin [ Update 10-02-2026 ]", ar: "[ تحديث 10-02-2026 ] مطبخ عصري" } },
-  ];
+    { id: 4, src: "assets/Project/FinalProject/Library-Plan-1.webp", category: "library", title: { he: "תוכנית קרקע", en: "Ground Floor Plan", ar: "تخطيط الطابق الأرضي" } },
+    { id: 5, src: "assets/Project/FinalProject/Library-Section-1.webp", category: "library", title: { he: "חתכים אדריכליים", en: "Architectural Sections", ar: "مقاطع معمارية" } },
+    { id: 6, src: "assets/Project/FinalProject/Library-Details-1.webp", category: "library", title: { he: "פרטי בנייה", en: "Construction Details", ar: "تفاصيل إنشائية" } },
+    { id: 7, src: "assets/Project/kitchen01/Kitchen1.webp", category: "Kitchin", title: { he: "מטבח מודרני - מבט 1", en: "Modern Kitchen - View 1", ar: "مطبخ عصري - منظور 1" } },
+    { id: 8, src: "assets/Project/kitchen01/Kitchen2.webp", category: "Kitchin", title: { he: "מטבח מודרני - מבט 2", en: "Modern Kitchen - View 2", ar: "مطبخ عصري - منظور 2" } },
+    { id: 9, src: "assets/Project/kitchen01/Kitchen3.webp", category: "Kitchin", title: { he: "מטבח מודרני - מבט 3", en: "Modern Kitchen - View 3", ar: "مطبخ عصري - منظور 3" } },
+    { id: 10, src: "assets/Project/kitchen01/kitchen10-02-1.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "Modern Kitchen [ Update 10-02-2026 ]", ar: "مطبخ عصري [ تحديث 10-02-2026 ]" } },
+    { id: 11, src: "assets/Project/kitchen01/kitchen10-02-2.webp", category: "Kitchin", title: { he: "מטבח מודרני [ עדכון 10-02-2026 ]", en: "Modern Kitchen [ Update 10-02-2026 ]", ar: "مطبخ عصري [ تحديث 10-02-2026 ]" } }
+];
 
-// المتغيرات العامة
 let currentLang = 'he';
 let currentImageIndex = 0;
 
-// تهيئة الموقع عند التحميل
-document.addEventListener('DOMContentLoaded', function() {
-    // تعيين سنة حقوق الطبع
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-    
-    // تهيئة الترجمة
-    initLanguage();
-    
-    // تهيئة معرض الصور
-// تهيئة معرض الصور المحسن للأداء والوصول
 function initGalleryBySection(sectionId, categoryName) {
     const container = document.getElementById(sectionId);
     if (!container) return;
 
-    // تنظيف الحاوية قبل الإضافة لتجنب التكرار
     container.innerHTML = '';
-
     const filteredImages = galleryImages.filter(img => img.category === categoryName);
 
     filteredImages.forEach((image) => {
         const galleryItem = document.createElement('div');
         galleryItem.className = `gallery-item ${image.category}`;
-        
-        // إيجاد الفهرس الأصلي لضمان عمل الـ Lightbox بشكل صحيح
         const originalIndex = galleryImages.findIndex(img => img.id === image.id);
+        galleryItem.dataset.index = originalIndex;
+        galleryItem.setAttribute('role', 'button');
+        galleryItem.setAttribute('tabindex', '0');
         
-        // تحسين الـ HTML:
-        // 1. إضافة loading="lazy" لتسريع تحميل الصفحة على الموبايل.
-        // 2. استخدام وسم <h4> متوافق مع الترجمة الحالية.
+        const imgTitle = image.title[currentLang] || image.title.he;
+        galleryItem.setAttribute('aria-label', imgTitle);
+
         galleryItem.innerHTML = `
             <img src="${image.src}" 
-                 alt="${image.title[currentLang] || image.title.he}" 
+                 alt="${imgTitle}" 
                  loading="lazy" 
-                 decoding="async">
+                 decoding="async"
+                 width="400"
+                 height="250">
             <div class="gallery-item-overlay">
-                <p style="color: white; font-weight: 600;">${image.title[currentLang]}</p>
+                <p class="gallery-title">${imgTitle}</p>
             </div>
         `;
 
-        // إضافة مستمع الأحداث لفتح الصورة
         galleryItem.addEventListener('click', () => openLightbox(originalIndex));
+        galleryItem.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openLightbox(originalIndex);
+            }
+        });
         container.appendChild(galleryItem);
     });
 }
 
-	// عند التحميل، استدعي الدالة مرتين
-initGalleryBySection('gallery-library', 'library');
-initGalleryBySection('gallery-Kitchin', 'Kitchin');
+document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('currentYear');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
     
-    // تهيئة نموذج الاتصال
+    initGalleryBySection('gallery-library', 'library');
+    initGalleryBySection('gallery-Kitchin', 'Kitchin');
+    initLanguage();
     initContactForm();
-    
-    // تهيئة التنقل للهواتف
     initMobileMenu();
-    
-    // تهيئة أزرار تغيير اللغة
     initLanguageSwitcher();
-    
+    initLightboxEvents();
+    initScrollSpy();
 });
 
-// تهيئة الترجمة
 function initLanguage() {
-    // تعيين اللغة الافتراضية (العبرية)
-    changeLanguage('he');
-    
-    // تعيين اتجاه الصفحة بناءً على اللغة
-    document.documentElement.lang = currentLang;
-    document.documentElement.dir = currentLang === 'ar' ? 'rtl' : currentLang === 'he' ? 'rtl' : 'ltr';
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    const savedLang = localStorage.getItem('archjm_lang');
+    const initialLang = (urlLang && translations[urlLang]) ? urlLang :
+                        (savedLang && translations[savedLang]) ? savedLang : 'he';
+    changeLanguage(initialLang, false);
 }
 
-// تغيير اللغة
-function changeLanguage(lang) {
+function changeLanguage(lang, savePreference = true) {
+    if (!translations[lang]) return;
     currentLang = lang;
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : lang === 'he' ? 'rtl' : 'ltr';
     
-    // تحديث جميع العناصر ذات سمة data-i18n
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
+    
+    if (savePreference) {
+        localStorage.setItem('archjm_lang', lang);
+    }
+
+    // تحديث عنوان ووصف الصفحة لمحركات البحث (Dynamic SEO)
+    if (translations[lang].metaTitle) {
+        document.title = translations[lang].metaTitle;
+    }
+    const metaDesc = document.getElementById('metaDescription');
+    if (metaDesc && translations[lang].metaDesc) {
+        metaDesc.setAttribute('content', translations[lang].metaDesc);
+    }
+
+    // تحديث حالة أزرار اللغة
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+    });
+    
+    // تحديث النصوص
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (translations[lang] && translations[lang][key]) {
+        if (translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
     });
     
-    // تحديث العناصر ذات السمة data-i18n-placeholder
+    // تحديث الحقول النصية
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
         const key = element.getAttribute('data-i18n-placeholder');
-        if (translations[lang] && translations[lang][key]) {
+        if (translations[lang][key]) {
             element.placeholder = translations[lang][key];
         }
     });
     
-    // تحديث عناوين الصور في المعرض
     updateImageTitles();
 }
 
-// تهيئة أزرار تغيير اللغة
 function initLanguageSwitcher() {
     document.querySelectorAll('.lang-btn').forEach(button => {
         button.addEventListener('click', function() {
             const lang = this.getAttribute('data-lang');
-            changeLanguage(lang);
-            
-            // تحديث النشاط على أزرار اللغة
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            this.classList.add('active');
+            changeLanguage(lang, true);
         });
     });
 }
 
-// تهيئة معرض الصور
-function initGallery() {
-    const gallery = document.getElementById('gallery');
-    
-    // إضافة الصور إلى المعرض
-    galleryImages.forEach((image, index) => {
-        const galleryItem = document.createElement('div');
-        galleryItem.className = `gallery-item ${image.category}`;
-        galleryItem.dataset.index = index;
-        
-        galleryItem.innerHTML = `
-            <img src="${image.src}" alt="${image.title.he}">
-            <div class="gallery-item-overlay">
-                <h4>${image.title[currentLang]}</h4>
-            </div>
-        `;
-        
-        galleryItem.addEventListener('click', () => openLightbox(index));
-        gallery.appendChild(galleryItem);
-    });
-    
-  
-    
-   
-}
-
-// تحديث عناوين الصور
 function updateImageTitles() {
-    document.querySelectorAll('.gallery-item-overlay h4').forEach((titleElement, index) => {
-        const image = galleryImages[index];
-        if (image && image.title[currentLang]) {
-            titleElement.textContent = image.title[currentLang];
+    document.querySelectorAll('.gallery-item').forEach((item) => {
+        const idx = parseInt(item.dataset.index, 10);
+        const titleEl = item.querySelector('.gallery-title');
+        const imgEl = item.querySelector('img');
+        if (!isNaN(idx) && galleryImages[idx]) {
+            const newTitle = galleryImages[idx].title[currentLang];
+            if (titleEl) titleEl.textContent = newTitle;
+            if (imgEl) imgEl.alt = newTitle;
+            item.setAttribute('aria-label', newTitle);
         }
     });
 }
 
-// فتح معرض الصور الموسع
 function openLightbox(index) {
     currentImageIndex = index;
     const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightboxImage');
-    const imageInfo = document.getElementById('imageInfo');
-    
-    lightboxImage.src = galleryImages[index].src;
-    imageInfo.textContent = galleryImages[index].title[currentLang];
-    
+    updateLightboxImage();
     lightbox.style.display = 'flex';
-    
-    // إغلاق المعرض عند النقر خارج الصورة
-    lightbox.addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeLightbox();
-        }
-    });
+    document.body.style.overflow = 'hidden';
 }
 
-// إغلاق معرض الصور الموسع
 function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox) {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = '';
+    }
 }
 
-// تحكم بل فيديو
-function initVideoControls() {
-    // تشغيل/إيقاف الفيديو عند النقر على زر التشغيل
-    document.querySelectorAll('.play-btn').forEach((btn, index) => {
-        btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const videoWrapper = this.closest('.video-wrapper');
-            const video = videoWrapper.querySelector('.project-video');
-            
-            if (video.paused) {
-                video.play();
-                this.style.opacity = '0';
-                videoWrapper.querySelector('.video-overlay').style.opacity = '0.7';
-            } else {
-                video.pause();
-                this.style.opacity = '0.9';
-                videoWrapper.querySelector('.video-overlay').style.opacity = '1';
-            }
-        });
-    });
-    
-    // إعادة عرض زر التشغيل عند توقف الفيديو
-    document.querySelectorAll('.project-video').forEach(video => {
-        video.addEventListener('pause', function() {
-            const videoWrapper = this.closest('.video-wrapper');
-            const playBtn = videoWrapper.querySelector('.play-btn');
-            playBtn.style.opacity = '0.9';
-            videoWrapper.querySelector('.video-overlay').style.opacity = '1';
-        });
-        
-        video.addEventListener('play', function() {
-            const videoWrapper = this.closest('.video-wrapper');
-            const playBtn = videoWrapper.querySelector('.play-btn');
-            playBtn.style.opacity = '0';
-            videoWrapper.querySelector('.video-overlay').style.opacity = '0.7';
-        });
-    });
-}
-
-// استدع الدالة في تهيئة الموقع
-document.addEventListener('DOMContentLoaded', function() {
-    // ... الكود الحالي ...
-    
-    // أضف هذا السطر:
-    initVideoControls();
-});
-
-// تهيئة أزرار التنقل في المعرض الموسع
-document.getElementById('closeLightbox').addEventListener('click', closeLightbox);
-document.getElementById('prevBtn').addEventListener('click', showPrevImage);
-document.getElementById('nextBtn').addEventListener('click', showNextImage);
-
-// عرض الصورة السابقة
 function showPrevImage() {
     currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
     updateLightboxImage();
 }
 
-// عرض الصورة التالية
 function showNextImage() {
     currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
     updateLightboxImage();
 }
 
-// تحديث الصورة في المعرض الموسع
 function updateLightboxImage() {
     const lightboxImage = document.getElementById('lightboxImage');
     const imageInfo = document.getElementById('imageInfo');
+    const currentItem = galleryImages[currentImageIndex];
     
-    lightboxImage.src = galleryImages[currentImageIndex].src;
-    imageInfo.textContent = galleryImages[currentImageIndex].title[currentLang];
+    if (lightboxImage && currentItem) {
+        lightboxImage.src = currentItem.src;
+        lightboxImage.alt = currentItem.title[currentLang];
+    }
+    if (imageInfo && currentItem) {
+        imageInfo.textContent = currentItem.title[currentLang];
+    }
 }
 
-// تهيئة نموذج الاتصال
+function initLightboxEvents() {
+    const lightbox = document.getElementById('lightbox');
+    const closeBtn = document.getElementById('closeLightbox');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    if (prevBtn) prevBtn.addEventListener('click', showPrevImage);
+    if (nextBtn) nextBtn.addEventListener('click', showNextImage);
+
+    if (lightbox) {
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (!lightbox || lightbox.style.display !== 'flex') return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') showPrevImage();
+        if (e.key === 'ArrowLeft') showNextImage();
+    });
+}
+
 function initContactForm() {
     const contactForm = document.getElementById('contactForm');
+    const feedbackEl = document.getElementById('formFeedback');
+    if (!contactForm) return;
     
-    // أضف دالة تحقق الميل هنا (بجانب initContactForm)
     function isValidEmail(email) {
-        // تحقق صيغة الميل الأساسية
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) return false;
         
-        // قوائم temp emails
         const tempDomains = [
             'temp-mail.org', 'temp-mail.io', 'guerrillamail.com',
             'mailinator.com', '10minutemail.com', 'yopmail.com'
@@ -522,20 +518,17 @@ function initContactForm() {
         return !tempDomains.some(temp => domain.includes(temp));
     }
     
-    // دالة تحقق
     function validateContactForm(form) {
         const errors = [];
         const lang = currentLang;
         
-        // 1. الاسم (3 حروف)
         const name = form.querySelector('input[name="name"]').value.trim();
         if (name.length < 3) {
             errors.push(lang === 'he' ? 'שם מלא - לפחות 3 תווים' :
-                        lang === 'ar' ? 'الاسم - 3 أحرف على الأقل' :
+                        lang === 'ar' ? 'الاسم الكامل - 3 أحرف على الأقل' :
                         'Full name - at least 3 characters');
         }
         
-        // 2. الميل
         const email = form.querySelector('input[name="email"]').value.trim();
         if (!isValidEmail(email)) {
             errors.push(lang === 'he' ? 'אימייל לא תקין או זמני' :
@@ -543,121 +536,131 @@ function initContactForm() {
                         'Invalid or temporary email');
         }
         
-        // 3. الهاتف
         const phone = form.querySelector('input[name="phone"]').value.trim();
-        if (phone && !/^05\d-?\d{7}$/.test(phone)) {
+        if (phone && !/^(\+?\d{1,3}[- ]?)?0?\d{2,3}-?\d{7}$/.test(phone)) {
             errors.push(lang === 'he' ? 'מספר טלפון לא תקין (05X-XXXXXXX)' :
                         lang === 'ar' ? 'رقم هاتف غير صحيح (05X-XXXXXXX)' :
                         'Invalid phone number (05X-XXXXXXX)');
         }
         
-        // 4. الرسالة
-        const message = form.querySelector('textarea[name="message"]').value.trim();
-        if (message.length < 10) { // غيرت لـ 10 بدل 20
-            errors.push(lang === 'he' ? `הודעה קצרה מדי (נדרשים 10 תווים, יש ${message.length})` :
-                        lang === 'ar' ? `الرسالة قصيرة (مطلوب 10 حرف، لديك ${message.length})` :
-                        `Message too short (10 chars required, you have ${message.length})`);
-        }
-        
-        // 5. الخدمة
         const service = form.querySelector('select[name="service"]').value;
-        if (service === 'general') {
+        if (!service) {
             errors.push(lang === 'he' ? 'אנא בחר סוג שירות' :
                         lang === 'ar' ? 'الرجاء اختيار نوع الخدمة' :
                         'Please select a service type');
+        }
+
+        const message = form.querySelector('textarea[name="message"]').value.trim();
+        if (message.length < 10) {
+            errors.push(lang === 'he' ? `הודעה קצרה מדי (נדרשים 10 תווים, יש ${message.length})` :
+                        lang === 'ar' ? `الرسالة قصيرة (مطلوب 10 أحرف، لديك ${message.length})` :
+                        `Message too short (10 chars required, you have ${message.length})`);
         }
         
         return errors;
     }
     
-    // event listener واحد فقط
-    contactForm.addEventListener('submit', function(e) {
-        // 1. التحقق أولاً
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
         const errors = validateContactForm(this);
         
         if (errors.length > 0) {
-            e.preventDefault();
-            
-            const errorMessages = {
-                he: 'תיקון השגיאות הבאות לפני שליחה:\n' + errors.join('\n• '),
-                ar: 'الرجاء تصحيح الأخطاء التالية قبل الإرسال:\n' + errors.join('\n• '),
-                en: 'Please fix these errors before sending:\n' + errors.join('\n• ')
-            };
-            
-            alert(errorMessages[currentLang] || errorMessages.en);
+            if (feedbackEl) {
+                feedbackEl.className = 'form-feedback error';
+                feedbackEl.innerHTML = errors.map(err => `<div>• ${err}</div>`).join('');
+            }
             return;
         }
         
-        // 2. إذا كل شيء صحيح
-        console.log('Form is valid, sending to Formspree...');
-        
-        // 3. لا تمنع الإرسال - دع Formspree يرسل
-        // لا تستخدم e.preventDefault() هنا
-        
-        // 4. عرض رسالة نجاح بعد تأخير
         const submitBtn = this.querySelector('.submit-btn');
-        const originalText = submitBtn.innerHTML;
+        const originalText = submitBtn.textContent;
         
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + 
             (currentLang === 'he' ? 'שולח...' : 
              currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...');
         submitBtn.disabled = true;
-        
-        setTimeout(() => {
-            submitBtn.innerHTML = originalText;
+        if (feedbackEl) feedbackEl.textContent = '';
+
+        try {
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                this.reset();
+                if (feedbackEl) {
+                    feedbackEl.className = 'form-feedback success';
+                    feedbackEl.textContent = translations[currentLang].formSuccess;
+                }
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (err) {
+            if (feedbackEl) {
+                feedbackEl.className = 'form-feedback error';
+                feedbackEl.textContent = translations[currentLang].formError;
+            }
+        } finally {
+            submitBtn.textContent = originalText;
             submitBtn.disabled = false;
-            
-            const successMessages = {
-                he: 'תודה! הפנייה נשלחה למערכת.',
-                en: 'Thank you! Form submitted.',
-                ar: 'شكراً! تم إرسال النموذج.'
-            };
-            
-            alert(successMessages[currentLang] || successMessages.he);
-            
-            // إعادة تعيين النموذج
-            this.reset();
-            this.querySelector('select[name="service"]').value = 'general';
-            
-        }, 3000);
+        }
     });
 }
 
-// تهيئة قائمة التنقل للهواتف
 function initMobileMenu() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (!menuToggle || !navLinks) return;
     
     menuToggle.addEventListener('click', function() {
-        navLinks.classList.toggle('active');
-        menuToggle.innerHTML = navLinks.classList.contains('active') ? 
-            '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        const isExpanded = navLinks.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isExpanded);
+        menuToggle.innerHTML = isExpanded ? 
+            '<i class="fas fa-times" aria-hidden="true"></i>' : 
+            '<i class="fas fa-bars" aria-hidden="true"></i>';
     });
     
-    // إغلاق القائمة عند النقر على رابط
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function() {
             navLinks.classList.remove('active');
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            
-            // تحديث النشاط على روابط التنقل
-            document.querySelectorAll('.nav-link').forEach(item => {
-                item.classList.remove('active');
-            });
-            this.classList.add('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i>';
         });
     });
 }
 
-// إضافة تأثير التمرير لشريط التنقل
-window.addEventListener('scroll', function() {
+function initScrollSpy() {
+    const sections = document.querySelectorAll('main section[id]');
+    const navLinks = document.querySelectorAll('.nav-links .nav-link:not(.nav-download-btn)');
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.98)';
-        navbar.style.padding = '10px 0';
-    } else {
-        navbar.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
-        navbar.style.padding = '15px 0';
-    }
-});
 
+    window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+
+        if (navbar) {
+            if (scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }
+
+        let currentSectionId = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            const sectionHeight = section.offsetHeight;
+            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                currentSectionId = section.getAttribute('id');
+            }
+        });
+
+        if (currentSectionId) {
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === `#${currentSectionId}`);
+            });
+        }
+    }, { passive: true });
+}

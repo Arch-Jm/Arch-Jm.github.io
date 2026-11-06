@@ -77,8 +77,8 @@ const translations = {
 		
 		premiumTitle: "חבילת הכלים המקצועית - JohnnyTools",
 		premiumDesc: "שדרג את העבודה שלך עם מערכת אוטומציה מלאה ◾ הכוללת רישוי שנתי ותמיכה טכנית",
-		buyNow: "רכישת רישיון / הורדה",
-		FREE: "הורדה בחינם",
+downloadPro: "רכישת רישיון / PRO",
+downloadFree: "הורדה בחינם (Free Kit)",
 		
 		downloadTool: "הורד כלי", // النص اللي بيظهر في الزر
 		
@@ -152,8 +152,8 @@ const translations = {
 		
 		premiumTitle: "Premium Toolset - JohnnyTools",
 		premiumDesc: "Upgrade your workflow with a full automation system ◾ Annual license and technical support included",
-		buyNow: "Get License / Download",
-		FREE: "free download",
+downloadPro: "Get Pro License",
+downloadFree: "Download Free Kit",
 		
 		downloadTool: "Download Tool",
 		
@@ -226,8 +226,8 @@ automationService: "AutoCAD Automation Development",
 		
 		premiumTitle: "مجموعة الأدوات المميزة - JohnnyTools",
 		premiumDesc: "ارتقِ بعملك مع نظام أتمتة كامل ◾ يتضمن ترخيصاً سنوياً ودعماً فنياً متواصلاً",
-		buyNow: "شراء الترخيص / تحميل",
-		FREE: "free download",
+downloadPro: "ترخيص النسخة الاحترافية (PRO)",
+downloadFree: "تحميل النسخة المجانية (Free)",
 		
 		downloadTool: "تحميل الأداة",
 		

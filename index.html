@@ -1,668 +1,263 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Johnny Makhoul | ArchJm - Architect & AutoCAD Automation Expert</title>
-    <meta name="description" id="metaDescription" content="ג'וני מחול | ArchJm - הנדסאי אדריכלות ומפתח כלי אוטומציה וליספים ב-AutoCAD. جوني مخول - هندسة معمارية وتطوير أدوات أتمتة أوتوكاد JohnnyTools.">
-    <meta name="keywords" content="Johnny Makhoul, ArchJm, JohnnyTools, JTool, جوني مخول, ג'וני מחול, אדריכלות, אוטומציה באוטוקאד, תוספים לאוטוקאד, AutoCAD Automation, AutoLISP, Plugins, Architect">
-    <meta name="author" content="Johnny Makhoul">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#1a1a1a">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ג'וני מחול | אדריכלות ותכנון ביצוע</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Canonical & Hreflang SEO -->
-    <link rel="canonical" href="https://arch-jm.github.io/">
-    <link rel="alternate" hreflang="he" href="https://arch-jm.github.io/?lang=he">
-    <link rel="alternate" hreflang="ar" href="https://arch-jm.github.io/?lang=ar">
-    <link rel="alternate" hreflang="en" href="https://arch-jm.github.io/?lang=en">
-    <link rel="alternate" hreflang="x-default" href="https://arch-jm.github.io/">
-
-    <!-- Open Graph / Facebook / WhatsApp -->
-    <meta property="og:title" id="ogTitle" content="Johnny Makhoul | ArchJm - Architect & AutoCAD Automation">
-    <meta property="og:description" id="ogDescription" content="Architectural design & custom AutoCAD automation tools (JohnnyTools) that save up to 70% of drafting time.">
-    <meta property="og:image" content="https://arch-jm.github.io/assets/Images/logo.png">
-    <meta property="og:image:alt" content="Johnny Makhoul - ArchJm Logo">
-    <meta property="og:url" content="https://arch-jm.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="ArchJm">
-    <meta property="og:locale" content="he_IL">
-    <meta property="og:locale:alternate" content="ar_AR">
-    <meta property="og:locale:alternate" content="en_US">
-
-    <!-- Twitter / X Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Johnny Makhoul | ArchJm - Architect & AutoCAD Automation">
-    <meta name="twitter:description" content="Architectural planning, interior design, and JohnnyTools AutoCAD automation plugins.">
-    <meta name="twitter:image" content="https://arch-jm.github.io/assets/Images/logo.png">
-
-    <!-- Preconnect & Preload for Core Web Vitals (LCP) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preload" as="image" href="assets/Project/FinalProject/Library-img-2.webp" fetchpriority="high">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="48x48" href="assets/icon/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/icon/android-chrome-512x512.png">
-    <link rel="manifest" href="assets/icon/site.webmanifest">
-    <link rel="shortcut icon" href="assets/icon/favicon.ico">
-
-    <!-- Rich Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://arch-jm.github.io/#website",
-          "name": "ArchJm",
-          "alternateName": ["Johnny Makhoul", "ג'וני מחול", "جوني مخول", "JM Architecture"],
-          "url": "https://arch-jm.github.io/",
-          "inLanguage": ["he", "ar", "en"]
-        },
-        {
-          "@type": ["Person", "ProfessionalService"],
-          "@id": "https://arch-jm.github.io/#person",
-          "name": "Johnny Makhoul",
-          "alternateName": ["ג'וני מחול", "جوني مخول"],
-          "jobTitle": "Architectural & Software Associate Engineer",
-          "url": "https://arch-jm.github.io/",
-          "image": "https://arch-jm.github.io/assets/Images/Profile.webp",
-          "email": "mailto:ArchJM.Auto@Gmail.com",
-          "priceRange": "$$",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Peqi'in",
-            "addressRegion": "North District",
-            "addressCountry": "IL"
-          },
-          "sameAs": [
-            "https://www.instagram.com/archjm.auto/",
-            "https://www.youtube.com/@J-CAD",
-            "https://github.com/Arch-Jm"
-          ],
-          "knowsAbout": [
-            "Architectural Planning",
-            "Interior Design",
-            "AutoCAD Automation",
-            "AutoLISP Development",
-            "Dynamic Blocks"
-          ]
-        },
-        {
-          "@type": "SoftwareApplication",
-          "@id": "https://arch-jm.github.io/#johnnytools",
-          "name": "JohnnyTools (JTool)",
-          "operatingSystem": "Windows",
-          "applicationCategory": "DesignApplication",
-          "description": "AutoCAD automation plugin and toolbar system that saves up to 70% of architectural drafting time.",
-          "author": {
-            "@id": "https://arch-jm.github.io/#person"
-          },
-          "offers": {
-            "@type": "AggregateOffer",
-            "lowPrice": "0",
-            "priceCurrency": "ILS",
-            "offerCount": "2"
-          }
-        }
-      ]
+  <style>
+    body { 
+      font-family: 'Heebo', sans-serif;
+      background-color: #121417;
+      color: #e5e7eb;
     }
-    </script>
+    .arch-title { font-family: 'Oswald', sans-serif; }
+  </style>
 </head>
-<body>
-    <!-- شريط التنقل -->
-    <header>
-        <nav class="navbar" aria-label="Main Navigation">
-            <div class="nav-container">
-                <a href="#home" class="logo" aria-label="ArchJm Home">
-                    <span class="logo-text" data-i18n="logoName">ג'וני מחול</span>
-                    <span class="logo-line"></span>
-                </a>
-                
-                <div class="nav-links" id="navLinks">
-                    <a href="#home" class="nav-link active" data-i18n="home">דף הבית</a>
-                    <a href="#about" class="nav-link" data-i18n="about">אודות</a>
-                    <a href="#portfolio" class="nav-link" data-i18n="portfolio">תיק עבודות</a>
-                    <a href="#video" class="nav-link" data-i18n="video">סרטונים</a>
-                    <a href="#services" class="nav-link" data-i18n="services">שירותים</a>
-                    <a href="#contact" class="nav-link" data-i18n="contact">צור קשר</a>   
-                    <a href="#premium" class="nav-link nav-download-btn" data-i18n="downloadTool">הורד כלי</a>
-                </div>
-                
-                <div class="language-switcher" role="group" aria-label="Language Switcher">
-                    <button type="button" class="lang-btn active" data-lang="he" aria-label="שנה שפה לעברית">עברית</button>
-                    <button type="button" class="lang-btn" data-lang="en" aria-label="Change language to English">English</button>
-                    <button type="button" class="lang-btn" data-lang="ar" aria-label="تغيير اللغة للعربية">العربية</button>
-                </div>
-                
-                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="navLinks">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
+<body class="selection:bg-white selection:text-black min-h-screen flex flex-col justify-between">
 
-    <main>
-        <!-- القسم الرئيسي -->
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <h1 class="hero-title" data-i18n="heroTitle">ג'וני מחול | אדריכל</h1>
-                <p class="hero-subtitle" data-i18n="heroSubtitle">הנדסאי אדריכלות ותוכנה, שואף תמיד להשיג את התוצאות הטובות ביותר במינימום זמן</p>
-                <div class="hero-actions">
-                    <a href="#contact" class="cta-button" data-i18n="getQuote">ליצירת קשר</a>
-                    <a href="#premium" class="cta-button cta-secondary" data-i18n="downloadTool">הורד כלי</a>
-                </div>
-            </div>
-            <div class="hero-overlay"></div>
-        </section>
+  <!-- Header -->
+  <header class="border-b border-[#262b32] bg-[#121417]/95 sticky top-0 z-40 px-6 sm:px-12 py-4 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-neutral-200 text-neutral-950 font-bold flex items-center justify-center text-sm arch-title tracking-wider">
+          JM
+        </div>
+        <div>
+          <span class="text-sm font-bold tracking-wider text-white uppercase block leading-none">ג'וני מחול</span>
+          <span class="text-[10px] text-neutral-400 tracking-widest uppercase block mt-1">אדריכלות ◾ תוכניות ביצוע ◾ JTOOL</span>
+        </div>
+      </div>
 
-        <!-- قسم حول المهندس -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="aboutTitle">אודות</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p data-i18n="aboutText1">מומחה בשרטוט מדויק ובבניית בלוקים חכמים לייעול העבודה, בעל יכולת יצירתית לפתרון חללים אדריכליים.</p>
-                        <p data-i18n="aboutText2">רכשתי את ניסיוני באמצעות למידה עצמית במהלך לימודיי האקדמיים, ואני פועל לשיפור מתמיד בכל הזדמנות.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="assets/Images/Profile.webp" alt="Johnny Makhoul - ג'וני מחול - جوني مخول" width="550" height="550" loading="lazy" decoding="async">
-                    </div>
-                </div>
-            </div>
-        </section> 
-
-        <!-- قسم معرض الصور -->
-        <section id="portfolio" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title" data-i18n="portfolioTitle">תיק עבודות</h2>
-                <h3 class="section-subtitle" data-i18n="portfolioSubtitle">פרויקט גמר</h3>
-                
-                <div class="gallery-container">
-                    <div class="gallery" id="gallery-library"></div>
-                    
-                    <h3 class="section-subtitle" data-i18n="portfolioSubtitle1">מטבח מודרני</h3>
-                    <div class="gallery" id="gallery-Kitchin"></div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- قسم الفيديو -->
-        <section id="video" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="videoTitle">מדריך לסרגל הכלים של JTool</h2>
-                
-                <div class="video-gallery">
-                    <!-- فيديو 1 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe
-                                src="https://www.youtube.com/embed/LvKLqYV3XtQ?rel=0&modestbranding=1"
-                                title="הוספת מידות באוטוקאד - Add Dimensions Fast"
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video1Title">הוספת מידות באוטוקאד</h3>
-                            </div> 
-                        </div>
-                    </div>
-                    
-                    <!-- فيديو 2 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/O8Wgv_L6OVw?rel=0&modestbranding=1" 
-                                title="מפלסים דינאמי - Dynamic Levels" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video2Title">מפלסים דינאמי</h3>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <!-- فيديو 3 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/dUwaJYFJULk?rel=0&modestbranding=1" 
-                                title="הוספת בלוקים דינאמי - Insert Dynamic Blocks" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video3Title">הוספת בלוקים דינאמי</h3>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <!-- فيديو 4 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/6FbOdbXm2cE?rel=0&modestbranding=1" 
-                                title="שרטוט קירות מתקדם - Draw Wall" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video4Title">שרטוט קירות מתקדם</h3>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <!-- فيديو 5 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/g_EvJHXV87o?rel=0&modestbranding=1" 
-                                title="שרטוט מעקות מתקדם - Draw Rail" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video5Title">שרטוט מעקות מתקדם</h3>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <!-- فيديو 6 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/qnIv6H00uNc?rel=0&modestbranding=1" 
-                                title="שליטה וניהול האצ'ים באוטוקאד - AutoCAD Hatch Tools" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video6Title">שליטה וניהול האצ'ים באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 7 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/hgEBhoC7utE?rel=0&modestbranding=1" 
-                                title="מספור אוטומטי באוטוקאד - AutoCAD Automatic Numbering" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video7Title">מספור אוטומטי באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 8 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/h3z1UrHtDTI?rel=0&modestbranding=1" 
-                                title="כלי מפלסים ושיפועים באוטוקאד - AutoCAD Levels & Slopes" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video8Title">כלי מפלסים ושיפועים באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 9 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/UXjtDrW8u14?rel=0&modestbranding=1" 
-                                title="חישוב שטחים באוטוקאד - AutoCAD Area Calculation" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video9Title">חישוב שטחים באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 10 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/sQgVk99IW0Y?rel=0&modestbranding=1" 
-                                title="ספירת בלוקים באוטוקאד - AutoCAD Blocks Quantity Report" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video10Title">ספירת בלוקים באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 11 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/v-7t8rk1oV0?rel=0&modestbranding=1" 
-                                title="קווי עזר באוטוקאד - AutoCAD Construction Lines" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video11Title">קווי עזר באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- فيديو 12 -->
-                    <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe 
-                                src="https://www.youtube.com/embed/vWy8qoaJYpU?rel=0&modestbranding=1" 
-                                title="מעקב שעות עבודה באוטוקאד - AutoCAD Work Hours Tracker" 
-                                loading="lazy"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-                            <div class="video-overlay">
-                                <h3 class="video-title" data-i18n="video12Title">מעקב שעות עבודה באוטוקאד</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- قسم تحميل الأدوات (PRO & FREE) -->
-        <section id="premium" class="section bg-light">
-            <div class="container text-center">
-                <h2 class="section-title" data-i18n="premiumTitle">חבילת הכלים המקצועית - JohnnyTools</h2>
-                <p class="section-subtitle" data-i18n="premiumDesc">
-                    שדרג את העבודה שלך עם מערכת אוטומציה מלאה ◾ הכוללת רישוי שנתי ותמיכה טכנית
-                </p>
-                
-                <div class="plans-container">
-                    <!-- بطاقة نسخة البرو -->
-                    <div class="plan-card pro-card">
-                        <img src="assets/Images/JTool.webp" alt="JohnnyTools Pro - AutoCAD Automation" class="plan-img" width="240" height="240" loading="lazy" decoding="async">
-                        <a href="https://github.com/Arch-Jm/Arch-Jm.github.io/releases/latest/download/JTool.exe"
-                           class="download-action-btn btn-pro" 
-                           download>
-                           <i class="fas fa-crown" aria-hidden="true"></i> 
-                           <span data-i18n="downloadPro">רכישת רישיון / PRO</span>
-                        </a>
-                    </div>
-
-                    <!-- بطاقة النسخة المجانية -->
-                    <div class="plan-card free-card">
-                        <img src="assets/Images/JTool-free.png" alt="JohnnyTools Free Kit" class="plan-img" width="240" height="240" loading="lazy" decoding="async">
-                        <a href="https://github.com/Arch-Jm/Arch-Jm.github.io/releases/latest/download/JTool_Free.exe"
-                           class="download-action-btn btn-free" 
-                           download>
-                           <i class="fas fa-download" aria-hidden="true"></i> 
-                           <span data-i18n="downloadFree">הורדה בחינם (Free Kit)</span>
-                        </a>
-                    </div>
-                </div>
-				<!-- جدول مقارنة المميزات (PRO vs FREE) -->
-<div class="comparison-wrapper">
-    <h3 class="comparison-title" data-i18n="compTitle">השוואת גרסאות מלאה - PRO מול Free</h3>
-    <div class="table-responsive">
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th data-i18n="compFeature">כלי / קטגוריה באוטוקאד</th>
-                    <th class="free-col" data-i18n="compFree">גרסת Free</th>
-                    <th class="pro-col"><i class="fas fa-crown" aria-hidden="true"></i> <span data-i18n="compPro">גרסת PRO</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <strong data-i18n="catGeneral">כלים כלליים ותבניות</strong>
-                        <span class="cmd-hint">RE, FL, JFixFont, TMP, SSK, JVID</span>
-                    </td>
-                    <td><span class="badge-partial" data-i18n="compBasicGeneral">בסיסי (RE, FL, FontFix)</span></td>
-                    <td><span class="badge-pro" data-i18n="compProGeneral">מלא + Smart Sketch ותבניות</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catArch">שרטוט אדריכלי (Architectural)</strong>
-                        <span class="cmd-hint">DW, Stair (SS), Railing (Rail)</span>
-                    </td>
-                    <td><span class="badge-partial" data-i18n="compWallOnly">שרטוט קירות בלבד (DW)</span></td>
-                    <td><span class="badge-pro" data-i18n="compFullArch">קירות + מדרגות + מעקות</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catBlocks">ניהול בלוקים (Block Tools)</strong>
-                        <span class="cmd-hint">JohnnyInsert, DUPBLK</span>
-                    </td>
-                    <td><span class="badge-partial" data-i18n="compInsertOnly">הוספת בלוקים בלבד</span></td>
-                    <td><span class="badge-pro" data-i18n="compFullBlocks">הוספה + שכפול חכם (DUPBLK)</span></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catLevels">כלי מפלסים (Level Tools)</strong>
-                        <span class="cmd-hint">LV, ABS, REST</span>
-                    </td>
-                    <td><i class="fas fa-check-circle icon-yes" aria-label="Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catWorkLog">מעקב שעות עבודה (Work Log)</strong>
-                        <span class="cmd-hint">Check In, Check Out, Show Log</span>
-                    </td>
-                    <td><i class="fas fa-check-circle icon-yes" aria-label="Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catDim">כלי מידות מהירים (DIM Tools)</strong>
-                        <span class="cmd-hint">Quick Dim (SD), SUB Dim (SubD)</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catHatch">שליטה וניהול האצ'ים והצללות (Hatch Tools)</strong>
-                        <span class="cmd-hint">HF, HR, HB, HB-All, PL60, CL, CH</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catNum">מספור אוטומטי וסידור בלוקים (Number Tools)</strong>
-                        <span class="cmd-hint">JNUM, Dcir, JNMDRW, JJ, JNumBlk</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catLandscape">פיתוח שטח ושיפועים (Landscaping)</strong>
-                        <span class="cmd-hint">INC_ATT, SLOPE_AUTO, CALC_REL/ABS</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catPermit">רישוי, חישוב שטחים וכמויות (Permitting)</strong>
-                        <span class="cmd-hint">CA, CLN, AT, AT2, AutoArea, CountBlocks</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-                <tr>
-                    <td>
-                        <strong data-i18n="catXLines">קווי עזר לחתכים וחזיתות (XLines & Guidelines)</strong>
-                        <span class="cmd-hint">XL-Ref, XL-Vert, XL-AutoBuilding, GLC, GLE</span>
-                    </td>
-                    <td><i class="fas fa-times-circle icon-no" aria-label="Not Included"></i></td>
-                    <td><i class="fas fa-check-circle icon-pro" aria-label="Included"></i></td>
-                </tr>
-            </tbody>
-        </table>
+      <nav class="flex items-center gap-6 text-xs text-neutral-300">
+        <a href="#albums" class="hover:text-white transition">פרויקטים</a>
+        <a href="jtool.html" class="bg-[#1e2329] border border-[#323942] text-neutral-200 hover:border-neutral-400 px-3 py-1.5 transition flex items-center gap-1.5">
+          <i class="fas fa-layer-group text-[10px]"></i>
+          <span>JohnnyTools</span>
+          <span class="text-[10px] text-neutral-400">↗</span>
+        </a>
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ArchJM.Auto@Gmail.com&su=פנייה+בנושא+תכנון+אדריכלי" 
+	   target="_blank" 
+	   rel="noopener noreferrer" 
+	   class="bg-white text-black font-semibold px-4 py-1.5 hover:bg-neutral-200 transition">
+	  צור קשר
+		</a>
+		
+      </nav>
     </div>
-</div>
-            </div>
-        </section>
+  </header>
 
-        <!-- قسم الخدمات -->
-        <section id="services" class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="servicesTitle">השירותים שלנו</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-home" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="service-title" data-i18n="service1">תכנון אדריכלי</h3>
-                        <p class="service-text" data-i18n="service1Text">תכנון מלא של מבנים בהתאם לדרישות הלקוח ותקני הבנייה העדכניים.</p>
-                    </div>
+  <main class="max-w-7xl mx-auto px-6 sm:px-12 w-full">
 
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-roller" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="service-title" data-i18n="service3">עיצוב פנים</h3>
-                        <p class="service-text" data-i18n="service3Text">יצירת חללים פנימיים פונקציונליים ואסתטיים המותאמים אישית.</p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-robot" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="service-title" data-i18n="automationService">פיתוח כלי אוטומציה לאוטוקאד</h3>
-                        <p class="service-text" data-i18n="automationDesc">פיתוח תוספים (Plugins) וכלים מותאמים אישית החוסכים עד 70% מזמן השרטוט והעבודה.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- نموذج الاتصال -->
-        <section id="contact" class="section bg-light">
-            <div class="container">
-                <h2 class="section-title" data-i18n="contactTitle">צור קשר</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3 data-i18n="contactInfo">פרטי התקשרות</h3>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                            <span data-i18n="address">רחוב: פקעין (בוקייעה) , צפון ישראל</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope" aria-hidden="true"></i>
-                            <a href="mailto:ArchJM.Auto@Gmail.com" class="contact-link">ArchJM.Auto@Gmail.com</a>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/archjm.auto/" 
-                               class="social-icon instagram-btn" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               aria-label="Instagram">
-                                <i class="fab fa-instagram" aria-hidden="true"></i>
-                                <span class="social-text">Instagram</span>
-                            </a>
-                            
-                            <a href="https://www.youtube.com/@J-CAD" 
-                               class="social-icon youtube-btn" 
-                               target="_blank" 
-                               rel="noopener noreferrer"
-                               aria-label="YouTube">
-                                <i class="fab fa-youtube" aria-hidden="true"></i>
-                                <span class="social-text">YouTube</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/mzznadnd" method="POST" id="contactForm" novalidate>
-                            <input type="hidden" name="_subject" value="New Contact Form Submission - ArchJm">
-                            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-                       
-                            <div class="form-group">
-                                <input type="text" name="name" placeholder="שם מלא" required aria-label="Full Name" data-i18n-placeholder="fullName">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" placeholder="אימייל" required aria-label="Email" data-i18n-placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone" placeholder="טלפון" aria-label="Phone" data-i18n-placeholder="phone">
-                            </div>
-                            <div class="form-group">
-                                <select name="service" required aria-label="Select Service Type">
-                                    <option value="" disabled selected data-i18n="selectService">בחר סוג שירות</option>
-                                    <option value="architectural" data-i18n="serviceOption1">תכנון אדריכלי</option>
-                                    <option value="interior" data-i18n="serviceOption3">עיצוב פנים</option>
-                                    <option value="automation" data-i18n="serviceOption4">פיתוח תוספים</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" rows="5" placeholder="הודעה" required aria-label="Message" data-i18n-placeholder="message"></textarea>
-                            </div>
-                            <div id="formFeedback" class="form-feedback" role="status" aria-live="polite"></div>
-                            <button type="submit" class="submit-btn" data-i18n="sendMessage">שלח הודעה</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- تذييل الصفحة -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text" data-i18n="footerLogo">עיצוב אדריכלי ואוטומציה</span>
-                    <span class="logo-line"></span>
-                </div>
-                <p class="footer-text" data-i18n="footerText">אשמח לשיתוף פעולה פורה ומקצועי איתכם</p>
-                <p class="copyright">&copy; <span id="currentYear"></span> <span data-i18n="copyrightText">כל הזכויות שמורות - Johnny Makhoul</span></p>
-            </div>
+    <!-- Hero Section -->
+    <section class="py-14 sm:py-16 border-b border-[#262b32]">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+        <div class="lg:col-span-8 space-y-4 text-right">
+          <div class="inline-block bg-[#1c2026] text-neutral-300 border border-[#2e353f] text-[11px] px-3 py-1 uppercase tracking-widest font-medium">
+            תיק עבודות אדריכלי
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight uppercase tracking-tight">
+            תכנון מבנים, שרטוט מדויק <br/>
+            <span class="text-neutral-400 font-light">ופיתוח פתרונות מתקדמים ל-AUTOCAD</span>
+          </h1>
+          <p class="text-neutral-300 text-xs sm:text-sm max-w-2xl font-light leading-relaxed">
+            הנדסאי אדריכלות המשלב ראייה קונספטואלית מלאה עם ירידה קפדנית לפרטי ביצוע, חתכים מורכבים ותוכניות עבודה — לצד פיתוח כלי אוטומציה הנדסיים.
+          </p>
         </div>
-    </footer>
 
-    <!-- نافذة معرض الصور الموسع -->
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image Gallery Lightbox">
-        <div class="lightbox-content">
-            <button type="button" id="closeLightbox" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
-            <button type="button" id="prevBtn" class="lightbox-nav" aria-label="Previous Image"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
-            <button type="button" id="nextBtn" class="lightbox-nav" aria-label="Next Image"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-            <img id="lightboxImage" src="" alt="Gallery Image">
-            <div id="imageInfo" class="image-info"></div>
+        <!-- صندوق البيانات الجانبي -->
+        <div class="lg:col-span-4 bg-[#181b20] border border-[#2a3038] p-5 space-y-2 text-xs text-neutral-300">
+          <div class="flex justify-between border-b border-[#262b32] pb-2">
+            <span class="text-neutral-400">התמחות:</span>
+            <span class="text-white font-medium">תוכניות עבודה ועיצוב חלל</span>
+          </div>
+          <div class="flex justify-between border-b border-[#262b32] pb-2">
+            <span class="text-neutral-400">סביבת עבודה:</span>
+            <span class="text-white font-medium">AutoCAD ◾ AutoLISP ◾ 3D</span>
+          </div>
+          <div class="flex justify-between pt-1">
+            <span class="text-neutral-400">מיקום:</span>
+            <span class="text-neutral-200">פקיעין (בוקייעה)</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- תיקי פרויקטים (Dossiers) -->
+    <section id="albums" class="py-14">
+      <div class="mb-8 text-right">
+        <span class="text-neutral-400 text-xs tracking-widest uppercase font-semibold block">PROJECT DOSSIERS</span>
+        <h2 class="text-2xl font-bold text-white uppercase mt-1">תיקי פרויקטים נבחרים</h2>
+      </div>
+
+      <div id="albums-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#262b32] bg-[#0e1012] py-8 px-6 sm:px-12 text-xs text-neutral-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-5">
+        <a href="https://www.instagram.com/archjm.auto/" target="_blank" class="hover:text-white transition">INSTAGRAM</a>
+        <a href="https://www.youtube.com/@J-CAD" target="_blank" class="hover:text-white transition">YOUTUBE</a>
+        <a href="https://github.com/Arch-Jm" target="_blank" class="hover:text-white transition">GITHUB</a>
+        <span class="text-neutral-700">|</span>
+        <a href="mailto:ArchJM.Auto@Gmail.com" class="text-neutral-200 hover:text-white transition font-medium">ArchJM.Auto@Gmail.com</a>
+      </div>
+      <div>&copy; 2026 JOHNNY MAKHOUL ◾ ALL RIGHTS RESERVED</div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden flex flex-col justify-between p-6 select-none backdrop-blur-md">
+    <div class="flex justify-between items-center w-full z-10">
+      <div>
+        <h4 id="lightbox-album-name" class="text-sm font-bold text-white uppercase tracking-wider"></h4>
+        <p id="lightbox-item-title" class="text-xs text-neutral-400 mt-0.5"></p>
+      </div>
+      <button id="close-lightbox" class="text-white text-xs bg-neutral-800 border border-neutral-700 px-3.5 py-1.5 hover:bg-neutral-700 transition">
+        סגור [ESC]
+      </button>
     </div>
 
-    <script src="script.js" defer></script>
+    <div class="relative flex items-center justify-center flex-1 my-4 overflow-hidden">
+      <button id="prev-img" class="absolute right-2 text-white text-3xl p-3 bg-black/40 hover:bg-black/80 rounded transition z-10">&#10095;</button>
+      <button id="next-img" class="absolute left-2 text-white text-3xl p-3 bg-black/40 hover:bg-black/80 rounded transition z-10">&#10094;</button>
+
+      <img id="lightbox-img" src="" alt="" class="max-h-[72vh] max-w-[88vw] object-contain border border-neutral-800 shadow-2xl" />
+    </div>
+
+    <div class="flex flex-col items-center gap-2">
+      <span id="lightbox-counter" class="text-[11px] text-neutral-400"></span>
+      <div id="lightbox-thumbnails" class="flex gap-2 overflow-x-auto max-w-full py-1"></div>
+    </div>
+  </div>
+
+  <script>
+    const albums = [
+      {
+        id: "library",
+        title: "ספרייה עירונית ומרכז קהילתי",
+        category: "פרויקט גמר אדריכלי",
+        cover: "assets/Project/FinalProject/Library-img-2.webp",
+        desc: "סט תכנון מלא: תוכניות קומתיות, חתכים מפורטים, פרטי בנייה והדמיות חלל.",
+        items: [
+          { src: "assets/Project/FinalProject/Library-img-2.webp", tag: "חזית", title: "חזית דרומית - קומפוזיציה וחומריות" },
+          { src: "assets/Project/FinalProject/Library-img-1.webp", tag: "הדמיה", title: "כניסה ראשית ומבט רחוב" },
+          { src: "assets/Project/FinalProject/Library-img-3.webp", tag: "עיצוב פנים", title: "עיצוב פנים חלל קריאה ועיון" },
+          { src: "assets/Project/FinalProject/Library-Plan-1.webp", tag: "תוכנית עבודה", title: "תוכנית קרקע אדריכלית מפורטת" },
+          { src: "assets/Project/FinalProject/Library-Section-1.webp", tag: "חתך מפורט", title: "חתך אדריכלי עקרוני וגבהים" },
+          { src: "assets/Project/FinalProject/Library-Details-1.webp", tag: "פרט בניין", title: "פרטי מעטפת ומפגשי בניין" }
+        ]
+      },
+      {
+        id: "kitchen",
+        title: "תכנון ועיצוב מטבח מודרני",
+        category: "עיצוב פנים ונגרות",
+        cover: "assets/Project/kitchen01/Kitchen1.webp",
+        desc: "תכנון ארגונומי מדויק, פריסת מכשור, אי מרכזי ובחינת תאורה וחומרים.",
+        items: [
+          { src: "assets/Project/kitchen01/Kitchen1.webp", tag: "הדמיה", title: "מטבח מודרני - פרספקטיבה כללית ואי מרכזי" },
+          { src: "assets/Project/kitchen01/Kitchen2.webp", tag: "הדמיה", title: "מבט ארונות גבוהים וארגון מכשור" },
+          { src: "assets/Project/kitchen01/Kitchen3.webp", tag: "הדמיה", title: "מטבח מודרני - תאורה פנימית ושילוב חומרים" },
+          { src: "assets/Project/kitchen01/kitchen10-02-1.webp", tag: "הדמיה", title: "מטבח מודרני - קומפוזיציה חומרית מעודכנת" },
+          { src: "assets/Project/kitchen01/kitchen10-02-2.webp", tag: "הדמיה", title: "מטבח מודרני - הדמיה מרחבית פתוחה" }
+        ]
+      }
+    ];
+
+    let currentAlbum = null;
+    let currentItemIdx = 0;
+
+    function renderAlbums() {
+      const container = document.getElementById('albums-grid');
+      container.innerHTML = '';
+
+      albums.forEach(album => {
+        const card = document.createElement('div');
+        card.className = "group cursor-pointer bg-[#16181d] border border-[#262b32] hover:border-neutral-400 transition p-4 flex flex-col justify-between";
+        card.innerHTML = `
+          <div class="relative aspect-[16/9] bg-black border border-[#22262d] overflow-hidden mb-4">
+            <img src="${album.cover}" alt="${album.title}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+            <span class="absolute top-3 right-3 bg-black/80 border border-neutral-700 text-white text-[10px] px-2.5 py-1 uppercase tracking-wider font-semibold">
+              ${album.items.length} שרטוטים והדמיות
+            </span>
+          </div>
+          <div class="space-y-1.5">
+            <span class="text-[11px] text-neutral-400 uppercase tracking-widest block">${album.category}</span>
+            <h3 class="text-lg font-bold text-white group-hover:text-neutral-200 transition">${album.title}</h3>
+            <p class="text-xs text-neutral-400 font-light leading-relaxed">${album.desc}</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-[#22262d] flex justify-between items-center text-xs">
+            <span class="text-white font-medium group-hover:underline">פתח אלבום פרויקט</span>
+            <span class="text-neutral-400">←</span>
+          </div>
+        `;
+        card.onclick = () => openAlbum(album);
+        container.appendChild(card);
+      });
+    }
+
+    function openAlbum(album) {
+      currentAlbum = album;
+      currentItemIdx = 0;
+      updateLightbox();
+      document.getElementById('lightbox').classList.remove('hidden');
+    }
+
+    function updateLightbox() {
+      const item = currentAlbum.items[currentItemIdx];
+      document.getElementById('lightbox-album-name').innerText = currentAlbum.title;
+      document.getElementById('lightbox-item-title').innerText = `${item.tag} ◾ ${item.title}`;
+      document.getElementById('lightbox-img').src = item.src;
+      document.getElementById('lightbox-counter').innerText = `${currentItemIdx + 1} מתוך ${currentAlbum.items.length}`;
+
+      const thumbContainer = document.getElementById('lightbox-thumbnails');
+      thumbContainer.innerHTML = '';
+      currentAlbum.items.forEach((it, idx) => {
+        const thumb = document.createElement('img');
+        thumb.src = it.src;
+        thumb.className = `w-12 h-9 object-cover cursor-pointer border rounded-sm transition ${idx === currentItemIdx ? 'border-white scale-105' : 'border-neutral-700 opacity-50 hover:opacity-100'}`;
+        thumb.onclick = () => {
+          currentItemIdx = idx;
+          updateLightbox();
+        };
+        thumbContainer.appendChild(thumb);
+      });
+    }
+
+    document.getElementById('prev-img').onclick = (e) => {
+      e.stopPropagation();
+      currentItemIdx = (currentItemIdx + 1) % currentAlbum.items.length;
+      updateLightbox();
+    };
+
+    document.getElementById('next-img').onclick = (e) => {
+      e.stopPropagation();
+      currentItemIdx = (currentItemIdx - 1 + currentAlbum.items.length) % currentAlbum.items.length;
+      updateLightbox();
+    };
+
+    document.getElementById('close-lightbox').onclick = () => {
+      document.getElementById('lightbox').classList.add('hidden');
+    };
+
+    document.addEventListener('keydown', (e) => {
+      const box = document.getElementById('lightbox');
+      if (box.classList.contains('hidden')) return;
+      if (e.key === 'ArrowRight') document.getElementById('prev-img').click();
+      if (e.key === 'ArrowLeft') document.getElementById('next-img').click();
+      if (e.key === 'Escape') document.getElementById('close-lightbox').click();
+    });
+
+    renderAlbums();
+  </script>
 </body>
 </html>

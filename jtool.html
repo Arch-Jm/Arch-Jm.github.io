@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JohnnyTools (JTool) | סוויטת אוטומציה ל-AutoCAD</title>
+  
+  <meta name="description" content="JohnnyTools - מערכת סרגלי כלים ואוטומציה ייעודית ל-AutoCAD המקצרת עד כ-70% מזמן השרטוט האדריכלי וההנדסי." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Oswald:wght@500;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    body { 
+      font-family: 'Heebo', sans-serif;
+      background-color: #121417;
+      color: #e5e7eb;
+    }
+    .arch-title { font-family: 'Oswald', sans-serif; }
+    .mono-code { font-family: 'JetBrains Mono', monospace; }
+  </style>
+</head>
+<body class="selection:bg-white selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="border-b border-[#262b32] bg-[#121417]/95 sticky top-0 z-40 px-6 sm:px-12 py-4 backdrop-blur">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="w-9 h-9 bg-neutral-200 text-neutral-950 font-bold flex items-center justify-center text-sm arch-title tracking-wider">
+          JM
+        </a>
+        <div>
+          <span class="text-sm font-bold tracking-wider text-white uppercase block leading-none">JOHNNYTOOLS</span>
+          <span class="text-[10px] text-neutral-400 tracking-widest uppercase block mt-1">AutoCAD Automation Engine</span>
+        </div>
+      </div>
+
+      <nav class="flex items-center gap-6 text-xs text-neutral-300">
+        <a href="#plans" class="hover:text-white transition">הורדה ורישוי</a>
+        <a href="#comparison" class="hover:text-white transition hidden sm:inline">השוואת גרסאות</a>
+        <a href="tutorials.html" class="hover:text-white transition text-neutral-200 font-semibold flex items-center gap-1">
+          <span>מדריכי וידאו</span>
+          <span class="text-[10px] text-neutral-400">↗</span>
+        </a>
+        <a href="index.html" class="border border-[#323942] hover:border-neutral-400 px-3.5 py-1.5 transition flex items-center gap-1.5 text-neutral-200">
+          <i class="fas fa-arrow-right text-[10px]"></i>
+          <span>חזרה לפורטפוליו</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 sm:px-12 w-full">
+
+    <!-- Hero Section -->
+    <section class="py-14 sm:py-16 border-b border-[#262b32] text-center max-w-4xl mx-auto">
+      <div class="inline-block bg-[#1c2026] text-neutral-300 border border-[#2e353f] text-[11px] px-3.5 py-1 uppercase tracking-widest font-semibold mb-4">
+        v2.4 Production Ready
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white uppercase leading-tight tracking-tight mb-5">
+        שרטוט מהיר, מדויק ואוטומטי <br/>
+        <span class="text-neutral-400 font-light">חיסכון של עד 70% בזמן העבודה ב-AutoCAD</span>
+      </h1>
+      <p class="text-neutral-300 text-xs sm:text-sm font-light leading-relaxed max-w-2xl mx-auto mb-8">
+        מערכת סרגלי כלים ייעודית מבוססת AutoLISP המיועדת למשרדי אדריכלות, הנדסה ושרטטים. שליטה מלאה בשרטוט קירות, מעקות, מפלסים דינאמיים, הצללות וחישובי כמויות.
+      </p>
+      <div class="flex justify-center items-center">
+        <a href="#plans" class="bg-white text-black font-bold px-8 py-3.5 text-xs uppercase tracking-wider hover:bg-neutral-200 transition">
+          הורדת החבילה
+        </a>
+      </div>
+    </section>
+
+    <!-- Download Cards (Interactive Free vs Pro) -->
+    <section id="plans" class="py-14 border-b border-[#262b32]">
+      <div class="mb-10 text-center">
+        <span class="text-neutral-400 text-xs tracking-widest uppercase font-semibold block">EDITIONS</span>
+        <h2 class="text-2xl font-bold text-white uppercase mt-1">בחר את החבילה המתאימה לך</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- כרטיס גרסה חינמית (Free Kit) -->
+        <div id="card-free" onclick="selectPlan('free')" class="cursor-pointer bg-[#16181d] border border-[#262b32] p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 hover:border-neutral-500">
+          <div id="badge-free" class="hidden absolute -top-3 right-6 bg-white text-black text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 shadow">
+            החבילה הנבחרת
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs text-neutral-400 uppercase tracking-widest font-semibold">Starter Kit</span>
+              <span class="bg-blue-950/70 text-blue-300 text-[10px] px-2 py-0.5 border border-blue-900 rounded-sm">FREE</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">JohnnyTools Free</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed font-light mb-6">
+              גרסת בסיס הכוללת סרגל כלים אחד לשרטוט קירות בסיסי, כלי מפלסים ומעקב שעות עבודה.
+            </p>
+            <div class="relative aspect-square max-w-[190px] mx-auto mb-6 bg-black/40 border border-[#22262d] p-3 flex items-center justify-center">
+              <img src="assets/Images/JTool-free.png" alt="JohnnyTools Free" class="max-h-full object-contain" />
+            </div>
+          </div>
+          <a href="https://github.com/Arch-Jm/Arch-Jm.github.io/releases/latest/download/JTool_Free.exe" 
+             download 
+             class="w-full bg-[#1e2329] border border-[#323942] hover:border-neutral-300 text-white text-xs font-semibold py-3 uppercase tracking-wider text-center transition flex items-center justify-center gap-2">
+            <i class="fas fa-download text-[11px]"></i>
+            <span>הורדה בחינם (Free Kit)</span>
+          </a>
+        </div>
+
+        <!-- כרטיס גרסת פרו (PRO) -->
+        <div id="card-pro" onclick="selectPlan('pro')" class="cursor-pointer bg-[#181b20] border-2 border-white p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 shadow-xl">
+          <div id="badge-pro" class="absolute -top-3 right-6 bg-white text-black text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 shadow">
+            החבילה הנבחרת
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs text-neutral-400 uppercase tracking-widest font-semibold">Professional Suite</span>
+              <span class="bg-amber-950/60 text-amber-300 text-[10px] px-2 py-0.5 border border-amber-900 rounded-sm">PRO</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">JohnnyTools PRO</h3>
+            <p class="text-xs text-neutral-400 leading-relaxed font-light mb-6">
+              המערכת המלאה הכוללת 11 סרגלי כלים, שכפול בלוקים חכם, חישובי שטחים, פיתוח שטח והצללות.
+            </p>
+            <div class="relative aspect-square max-w-[190px] mx-auto mb-6 bg-black/40 border border-[#22262d] p-3 flex items-center justify-center">
+              <img src="assets/Images/JTool.webp" alt="JohnnyTools Pro" class="max-h-full object-contain" />
+            </div>
+          </div>
+          <a href="https://github.com/Arch-Jm/Arch-Jm.github.io/releases/latest/download/JTool.exe" 
+             download 
+             class="w-full bg-white hover:bg-neutral-200 text-black text-xs font-bold py-3 uppercase tracking-wider text-center transition flex items-center justify-center gap-2">
+            <i class="fas fa-crown text-[11px]"></i>
+            <span>רכישת רישיון / הורדת PRO</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Detailed Comparison Table -->
+    <section id="comparison" class="py-14">
+      <div class="mb-10 text-right">
+        <span class="text-neutral-400 text-xs tracking-widest uppercase font-semibold block">MATRIX</span>
+        <h2 class="text-2xl font-bold text-white uppercase mt-1">השוואת גרסאות מלאה — PRO מול Free</h2>
+      </div>
+
+      <div class="border border-[#262b32] bg-[#16181d] overflow-x-auto rounded-sm">
+        <table class="w-full text-right text-xs">
+          <thead>
+            <tr class="border-b border-[#262b32] bg-[#121417] text-neutral-400 uppercase">
+              <th class="p-4 font-semibold">כלי / קטגוריה באוטוקאד</th>
+              <th class="p-4 font-semibold text-center w-1/4">גרסת Free (סרגל אחד)</th>
+              <th class="p-4 font-semibold text-center w-1/4 bg-white/5 text-white">גרסת PRO (11 סרגלים)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#262b32] text-neutral-300">
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">כלים כלליים ותבניות</span>
+                <span class="mono-code text-[10px] text-neutral-500">RE, FL, JFixFont, TMP, SSK, JVID</span>
+              </td>
+              <td class="p-4 text-center text-neutral-400">בסיסי (RE, FL, FontFix)</td>
+              <td class="p-4 text-center font-semibold text-white bg-white/5">מלא + Smart Sketch ותבניות</td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">שרטוט אדריכלי (Architectural)</span>
+                <span class="mono-code text-[10px] text-neutral-500">DW, Stair (SS), Railing (Rail)</span>
+              </td>
+              <td class="p-4 text-center text-neutral-400">שרטוט קירות בלבד (DW)</td>
+              <td class="p-4 text-center font-semibold text-white bg-white/5">קירות + מדרגות + מעקות</td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">ניהול בלוקים (Block Tools)</span>
+                <span class="mono-code text-[10px] text-neutral-500">JohnnyInsert, DUPBLK</span>
+              </td>
+              <td class="p-4 text-center text-neutral-400">הוספת בלוקים בלבד</td>
+              <td class="p-4 text-center font-semibold text-white bg-white/5">הוספה + שכפול חכם (DUPBLK)</td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">כלי מפלסים (Level Tools)</span>
+                <span class="mono-code text-[10px] text-neutral-500">LV, ABS, REST</span>
+              </td>
+              <td class="p-4 text-center text-emerald-400"><i class="fas fa-check"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">מעקב שעות עבודה (Work Log)</span>
+                <span class="mono-code text-[10px] text-neutral-500">Check In, Check Out, Show Log</span>
+              </td>
+              <td class="p-4 text-center text-emerald-400"><i class="fas fa-check"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">כלי מידות מהירים (DIM Tools)</span>
+                <span class="mono-code text-[10px] text-neutral-500">Quick Dim (SD), SUB Dim (SubD)</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">שליטה וניהול האצ'ים והצללות (Hatch Tools)</span>
+                <span class="mono-code text-[10px] text-neutral-500">HF, HR, HB, HB-All, PL60, CL, CH</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">מספור אוטומטי וסידור בלוקים (Number Tools)</span>
+                <span class="mono-code text-[10px] text-neutral-500">JNUM, Dcir, JNMDRW, JJ, JNumBlk</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">פיתוח שטח ושיפועים (Landscaping)</span>
+                <span class="mono-code text-[10px] text-neutral-500">INC_ATT, SLOPE_AUTO, CALC_REL/ABS</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">רישוי, חישוב שטחים וכמויות (Permitting)</span>
+                <span class="mono-code text-[10px] text-neutral-500">CA, CLN, AT, AT2, AutoArea, CountBlocks</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td class="p-4">
+                <span class="font-bold text-white block">קווי עזר לחתכים וחזיתות (XLines & Guidelines)</span>
+                <span class="mono-code text-[10px] text-neutral-500">XL-Ref, XL-Vert, XL-AutoBuilding, GLC, GLE</span>
+              </td>
+              <td class="p-4 text-center text-neutral-600"><i class="fas fa-times"></i></td>
+              <td class="p-4 text-center text-emerald-400 bg-white/5"><i class="fas fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-[#262b32] bg-[#0e1012] py-8 px-6 sm:px-12 text-xs text-neutral-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-5">
+        <a href="https://www.youtube.com/@J-CAD" target="_blank" class="hover:text-white transition">ערוץ YouTube</a>
+        <a href="https://github.com/Arch-Jm" target="_blank" class="hover:text-white transition">GitHub Repo</a>
+        <span class="text-neutral-700">|</span>
+        <a href="mailto:ArchJM.Auto@Gmail.com" class="text-neutral-200 hover:text-white transition font-medium">ArchJM.Auto@Gmail.com</a>
+      </div>
+      <div>&copy; 2026 JOHNNYTOOLS ◾ DEVELOPED BY JOHNNY MAKHOUL</div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Quick Action -->
+  <a href="https://wa.me/972500000000?text=%D7%A9%D7%9C%D7%95%D7%9D%20%D7%92%27%D7%95%D7%A0%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A8%D7%9B%D7%99%D7%A9%D7%AA%20%D7%A8%D7%99%D7%A9%D7%95%D7%99%20JohnnyTools" 
+     target="_blank" 
+     class="fixed bottom-6 left-6 z-40 bg-white hover:bg-neutral-200 text-black p-3.5 rounded-full shadow-2xl flex items-center gap-2 group transition-all">
+    <i class="fab fa-whatsapp text-lg"></i>
+    <span class="text-xs font-bold max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out">בירור רישיון ותמיכה</span>
+  </a>
+
+  <!-- سكربت تفاعلية الباقات -->
+  <script>
+    function selectPlan(plan) {
+      const cardFree = document.getElementById('card-free');
+      const cardPro = document.getElementById('card-pro');
+      const badgeFree = document.getElementById('badge-free');
+      const badgePro = document.getElementById('badge-pro');
+
+      if (plan === 'free') {
+        cardFree.className = "cursor-pointer bg-[#181b20] border-2 border-white p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 shadow-xl";
+        badgeFree.classList.remove('hidden');
+
+        cardPro.className = "cursor-pointer bg-[#16181d] border border-[#262b32] p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 hover:border-neutral-500";
+        badgePro.classList.add('hidden');
+      } else {
+        cardPro.className = "cursor-pointer bg-[#181b20] border-2 border-white p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 shadow-xl";
+        badgePro.classList.remove('hidden');
+
+        cardFree.className = "cursor-pointer bg-[#16181d] border border-[#262b32] p-8 flex flex-col justify-between rounded-sm relative transition-all duration-300 hover:border-neutral-500";
+        badgeFree.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
